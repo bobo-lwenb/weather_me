@@ -1,0 +1,861 @@
+{
+    "@@last_modified": "2022-01-16T13:10:08.408311",
+    "settings": "Settings",
+    "@settings": {
+        "description": "settings",
+        "type": "text",
+        "placeholders": {}
+    },
+    "aboutApp": "About App",
+    "@aboutApp": {
+        "description": "About App",
+        "type": "text",
+        "placeholders": {}
+    },
+    "developer": "Developer: liu wenbo",
+    "@developer": {
+        "description": "developer name",
+        "type": "text",
+        "placeholders": {}
+    },
+    "viewLicense": "View License",
+    "@developer": {
+      "description": "view license",
+      "type": "text",
+      "placeholders": {}
+    },
+    "unitChoice": "Unit Choice",
+    "@developer": {
+      "description": "unit choice",
+      "type": "text",
+      "placeholders": {}
+    },
+    "metric": "Metric",
+    "@developer": {
+      "description": "the metric",
+      "type": "text",
+      "placeholders": {}
+    },
+    "imperial": "Imperial",
+    "@developer": {
+      "description": "the imperial",
+      "type": "text",
+      "placeholders": {}
+    },
+    "unitInfo": "For some data items that do not have imperial units, metric units are used uniformly.",
+    "@developer": {
+      "description": "unit information",
+      "type": "text",
+      "placeholders": {}
+    },
+    "celsius": "Celsius",
+    "@developer": {
+      "description": "the celsius",
+      "type": "text",
+      "placeholders": {}
+    },
+    "fahrenheit": "Fahrenheit",
+    "@developer": {
+      "description": "the fahrenheit",
+      "type": "text",
+      "placeholders": {}
+    },
+    "windSpeed": "Wind Speed",
+    "@developer": {
+      "description": "wind speed",
+      "type": "text",
+      "placeholders": {}
+    },
+    "visibility": "Visibility",
+    "@developer": {
+      "description": "visibility",
+      "type": "text",
+      "placeholders": {}
+    },
+    "appearance": "Appearance",
+    "@developer": {
+      "description": "Appearance",
+      "type": "text",
+      "placeholders": {}
+    },
+    "system": "System",
+    "@followSystem": {
+        "description": "Follow System",
+        "type": "text",
+        "placeholders": {}
+    },
+    "lightMode": "Light",
+    "@lightMode": {
+        "description": "Light Mode",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dark": "Dark",
+    "@darkMode": {
+        "description": "Dark Mode",
+        "type": "text",
+        "placeholders": {}
+    },
+    "demoArea": "Liubei Liuzhou",
+    "@darkMode": {
+        "description": "Demo Area: Liubei Liuzhou",
+        "type": "text",
+        "placeholders": {}
+    },
+    "demoIconText": "Partly Cloudy",
+    "@darkMode": {
+        "description": "Demo IconText: Partly Cloudy",
+        "type": "text",
+        "placeholders": {}
+    },
+    "language": "Language",
+    "@language": {
+        "description": "language settings",
+        "type": "text",
+        "placeholders": {}
+    },
+    "english": "English",
+    "@english": {
+        "description": "English",
+        "type": "text",
+        "placeholders": {}
+    },
+    "simplifiedChinese": "Simplified Chinese",
+    "@simplifiedChinese": {
+        "description": "Simplified Chines",
+        "type": "text",
+        "placeholders": {}
+    },
+    "langInfo": "Some data (e.g. Living Index, details of disaster warnings) are partially available in local language or English only. When the data does not match the set language, English or its local language results will be returned.",
+    "@simplifiedChinese": {
+      "description": "Language Information",
+      "type": "text",
+      "placeholders": {}
+    },
+    "noDisaster": "No meteorological disasters",
+    "@simplifiedChinese": {
+        "description": "There are no meteorological disasters in the current region",
+        "type": "text",
+        "placeholders": {}
+    },
+    "noDisasterNearby": "No meteorological disaster occurred in nearby areas",
+    "@simplifiedChinese": {
+        "description": "No meteorological disaster occurred in nearby areas",
+        "type": "text",
+        "placeholders": {}
+    },
+    "variousDisaster": "Various meteorological disasters",
+    "@simplifiedChinese": {
+        "description": "Various meteorological disasters are happening",
+        "type": "text",
+        "placeholders": {}
+    },
+    "warning": " Warning",
+    "@simplifiedChinese": {
+        "description": "Warning",
+        "type": "text",
+        "placeholders": {}
+    },
+    "warningStart": "Warning Starts",
+    "@simplifiedChinese": {
+        "description": "Warning Starts",
+        "type": "text",
+        "placeholders": {}
+    },
+    "warningEnd": "Warning Ends",
+    "@simplifiedChinese": {
+        "description": "Warning Ends",
+        "type": "text",
+        "placeholders": {}
+    },
+    "nearbyWarning": "Nearby Warning",
+    "@simplifiedChinese": {
+        "description": "Nearby Warning",
+        "type": "text",
+        "placeholders": {}
+    },
+    "city": "City",
+    "@simplifiedChinese": {
+        "description": "City",
+        "type": "text",
+        "placeholders": {}
+    },
+    "now": "Now",
+    "@simplifiedChinese": {
+        "description": "Now",
+        "type": "text",
+        "placeholders": {}
+    },
+    "sensation": "Sensation",
+    "@simplifiedChinese": {
+        "description": "Sensation",
+        "type": "text",
+        "placeholders": {}
+    },
+    "precipitation": "Precipitation",
+    "@simplifiedChinese": {
+        "description": "Precipitation",
+        "type": "text",
+        "placeholders": {}
+    },
+    "visibility": "Visibility",
+    "@simplifiedChinese": {
+        "description": "Visibility",
+        "type": "text",
+        "placeholders": {}
+    },
+    "cloudiness": "Cloudiness",
+    "@simplifiedChinese": {
+        "description": "Cloudiness",
+        "type": "text",
+        "placeholders": {}
+    },
+    "humidity": "Humidity",
+    "@simplifiedChinese": {
+        "description": "Humidity",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dewPoint": "Dew Point",
+    "@simplifiedChinese": {
+        "description": "Dew Point",
+        "type": "text",
+        "placeholders": {}
+    },
+    "probability": "Probability",
+    "@simplifiedChinese": {
+        "description": "Probability",
+        "type": "text",
+        "placeholders": {}
+    },
+    "windScale": "Wind Scale",
+    "@simplifiedChinese": {
+        "description": "Wind Scale",
+        "type": "text",
+        "placeholders": {}
+    },
+    "pressure": "Pressure",
+    "@simplifiedChinese": {
+        "description": "Pressure",
+        "type": "text",
+        "placeholders": {}
+    },
+    "uv": "UV",
+    "@simplifiedChinese": {
+        "description": "UV",
+        "type": "text",
+        "placeholders": {}
+    },
+    "level": "Level",
+    "@simplifiedChinese": {
+        "description": "Level",
+        "type": "text",
+        "placeholders": {}
+    },
+    "more": "More",
+    "@simplifiedChinese": {
+        "description": "More",
+        "type": "text",
+        "placeholders": {}
+    },
+    "postedon": "Posted on",
+    "@simplifiedChinese": {
+        "description": "Posted on",
+        "type": "text",
+        "placeholders": {}
+    },
+    "airQuality": "Air Quality",
+    "@simplifiedChinese": {
+        "description": "Air Quality",
+        "type": "text",
+        "placeholders": {}
+    },
+    "airForecast": "Air Quality Forecast",
+    "@simplifiedChinese": {
+        "description": "Air Quality Forecast",
+        "type": "text",
+        "placeholders": {}
+    },
+    "healthEffects": "Health Effects",
+    "@simplifiedChinese": {
+        "description": "Health Effects",
+        "type": "text",
+        "placeholders": {}
+    },
+    "recommended": "Recommended Action",
+    "@simplifiedChinese": {
+        "description": "Recommended Action",
+        "type": "text",
+        "placeholders": {}
+    },
+    "forecast24": "24 Hour Forecast",
+    "@simplifiedChinese": {
+        "description": "24 hour forecastt",
+        "type": "text",
+        "placeholders": {}
+    },
+    "forecast72": "72 Hour Forecast",
+    "@simplifiedChinese": {
+        "description": "72 hour forecastt",
+        "type": "text",
+        "placeholders": {}
+    },
+    "details": "Details",
+    "@simplifiedChinese": {
+        "description": "Details",
+        "type": "text",
+        "placeholders": {}
+    },
+    "forecast7": "7 Days Forecast",
+    "@simplifiedChinese": {
+        "description": "7 days forecast",
+        "type": "text",
+        "placeholders": {}
+    },
+    "forecast30": "30 Day",
+    "@simplifiedChinese": {
+        "description": "30 Day Forecast",
+        "type": "text",
+        "placeholders": {}
+    },
+    "showLess": "Show Less",
+    "@simplifiedChinese": {
+        "description": "Show Less",
+        "type": "text",
+        "placeholders": {}
+    },
+    "showMore": "Show More",
+    "@simplifiedChinese": {
+        "description": "Show More",
+        "type": "text",
+        "placeholders": {}
+    },
+    "sheet": "Sheet",
+    "@simplifiedChinese": {
+        "description": "Sheet",
+        "type": "text",
+        "placeholders": {}
+    },
+    "chart": "Chart",
+    "@simplifiedChinese": {
+        "description": "Chart",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dayRain": " days of rain",
+    "@simplifiedChinese": {
+        "description": "Chadays of rainrt",
+        "type": "text",
+        "placeholders": {}
+    },
+    "daySnow": " days of snow",
+    "@simplifiedChinese": {
+        "description": "days of snow",
+        "type": "text",
+        "placeholders": {}
+    },
+    "highestTemp": "the highest temperature is ",
+    "@simplifiedChinese": {
+        "description": "the highest temperature",
+        "type": "text",
+        "placeholders": {}
+    },
+    "lowestTemp": "the lowest temperature is ",
+    "@simplifiedChinese": {
+        "description": "the lowest temperature",
+        "type": "text",
+        "placeholders": {}
+    },
+    "tempHighest": "Highest",
+    "@simplifiedChinese": {
+        "description": "Highest",
+        "type": "text",
+        "placeholders": {}
+    },
+    "tempLowest": "Lowest",
+    "@simplifiedChinese": {
+        "description": "Lowest",
+        "type": "text",
+        "placeholders": {}
+    },
+    "willbe30": "In the next 30 days there will be ",
+    "@simplifiedChinese": {
+        "description": "In the next 30 days there will be",
+        "type": "text",
+        "placeholders": {}
+    },
+    "sunMoon": "Sun and Moon",
+    "@simplifiedChinese": {
+        "description": "Sun and Moon",
+        "type": "text",
+        "placeholders": {}
+    },
+    "sunRise": "Sun Rise",
+    "@simplifiedChinese": {
+        "description": "Sun Rise",
+        "type": "text",
+        "placeholders": {}
+    },
+    "sunSet": "Sun Set",
+    "@simplifiedChinese": {
+        "description": "Sun Set",
+        "type": "text",
+        "placeholders": {}
+    },
+    "moonRise": "Moon Rise",
+    "@simplifiedChinese": {
+        "description": "Moon Rise",
+        "type": "text",
+        "placeholders": {}
+    },
+    "moonSet": "Moon Set",
+    "@simplifiedChinese": {
+        "description": "Moon Set",
+        "type": "text",
+        "placeholders": {}
+    },
+    "livingIndex": "Living Index",
+    "@simplifiedChinese": {
+        "description": "Living Index",
+        "type": "text",
+        "placeholders": {}
+    },
+    "hour": "h",
+    "@simplifiedChinese": {
+        "description": "Hour",
+        "type": "text",
+        "placeholders": {}
+    },
+    "regional": "Regional Management",
+    "@simplifiedChinese": {
+        "description": "Regional management",
+        "type": "text",
+        "placeholders": {}
+    },
+    "cancel": "Cancel",
+    "@simplifiedChinese": {
+        "description": "Cancel",
+        "type": "text",
+        "placeholders": {}
+    },
+    "search": "Search",
+    "@simplifiedChinese": {
+        "description": "Search",
+        "type": "text",
+        "placeholders": {}
+    },
+    "done": "Done",
+    "@simplifiedChinese": {
+        "description": "Done",
+        "type": "text",
+        "placeholders": {}
+    },
+    "edit": "Edit",
+    "@simplifiedChinese": {
+        "description": "Edit",
+        "type": "text",
+        "placeholders": {}
+    },
+    "clear": "Clear",
+    "@simplifiedChinese": {
+        "description": "Clear",
+        "type": "text",
+        "placeholders": {}
+    },
+    "delete": "Delete",
+    "@simplifiedChinese": {
+        "description": "Delete",
+        "type": "text",
+        "placeholders": {}
+    },
+    "currentLocation": "Current Location",
+    "@simplifiedChinese": {
+        "description": "Current Location",
+        "type": "text",
+        "placeholders": {}
+    },
+    "areasConcern": "Areas Of concern",
+    "@simplifiedChinese": {
+        "description": "Areas Of concern",
+        "type": "text",
+        "placeholders": {}
+    },
+    "viewed": "Viewed Recently",
+    "@simplifiedChinese": {
+        "description": "Viewed Recently",
+        "type": "text",
+        "placeholders": {}
+    },
+    "weakest": "Weakest",
+    "@simplifiedChinese": {
+        "description": "Weakest",
+        "type": "text",
+        "placeholders": {}
+    },
+    "weaker": "Weaker",
+    "@simplifiedChinese": {
+        "description": "Weaker",
+        "type": "text",
+        "placeholders": {}
+    },
+    "medium": "Medium",
+    "@simplifiedChinese": {
+        "description": "Medium",
+        "type": "text",
+        "placeholders": {}
+    },
+    "strong": "Strong",
+    "@simplifiedChinese": {
+        "description": "Strong",
+        "type": "text",
+        "placeholders": {}
+    },
+    "strongest": "Strongest",
+    "@simplifiedChinese": {
+        "description": "Strongest",
+        "type": "text",
+        "placeholders": {}
+    },
+    "excellent": "Excellent",
+    "@simplifiedChinese": {
+        "description": "Excellent",
+        "type": "text",
+        "placeholders": {}
+    },
+    "good": "Good",
+    "@simplifiedChinese": {
+        "description": "Good",
+        "type": "text",
+        "placeholders": {}
+    },
+    "light": "Light",
+    "@simplifiedChinese": {
+        "description": "Light Pollution",
+        "type": "text",
+        "placeholders": {}
+    },
+    "moderately": "Moderately",
+    "@simplifiedChinese": {
+        "description": "Moderately Polluted",
+        "type": "text",
+        "placeholders": {}
+    },
+    "heavy": "Heavy",
+    "@simplifiedChinese": {
+        "description": "Heavy Pollution",
+        "type": "text",
+        "placeholders": {}
+    },
+    "serious": "Serious",
+    "@simplifiedChinese": {
+        "description": "Serious Pollution",
+        "type": "text",
+        "placeholders": {}
+    },
+    "influence1": "Satisfactory air quality, basically no air pollution",
+    "@simplifiedChinese": {
+        "description": "Satisfactory air quality, basically no air pollution",
+        "type": "text",
+        "placeholders": {}
+    },
+    "influence2": "Air quality is acceptable, but some pollutants may have weaker health effects for a very small number of exceptionally sensitive populations",
+    "@simplifiedChinese": {
+        "description": "Air quality is acceptable, but some pollutants may have weaker health effects for a very small number of exceptionally sensitive populations",
+        "type": "text",
+        "placeholders": {}
+    },
+    "influence3": "Symptoms are mildly aggravated in susceptible people, and irritation symptoms appear in healthy people",
+    "@simplifiedChinese": {
+        "description": "Symptoms are mildly aggravated in susceptible people, and irritation symptoms appear in healthy people",
+        "type": "text",
+        "placeholders": {}
+    },
+    "influence4": "Further aggravate the symptoms of susceptible people and may have an impact on the heart and respiratory system of healthy people",
+    "@simplifiedChinese": {
+        "description": "Further aggravate the symptoms of susceptible people and may have an impact on the heart and respiratory system of healthy people",
+        "type": "text",
+        "placeholders": {}
+    },
+    "influence5": "Patients with heart disease and lung disease have significantly worse symptoms, reduced exercise tolerance, and symptoms are common in healthy people",
+    "@simplifiedChinese": {
+        "description": "Patients with heart disease and lung disease have significantly worse symptoms, reduced exercise tolerance, and symptoms are common in healthy people",
+        "type": "text",
+        "placeholders": {}
+    },
+    "influence6": "Healthy people have reduced exercise tolerance, have obvious strong symptoms, and qualify for certain diseases in advance",
+    "@simplifiedChinese": {
+        "description": "Healthy people have reduced exercise tolerance, have obvious strong symptoms, and qualify for certain diseases in advance",
+        "type": "text",
+        "placeholders": {}
+    },
+    "advice1": "All kinds of people can do normal activities",
+    "@simplifiedChinese": {
+        "description": "All kinds of people can do normal activities",
+        "type": "text",
+        "placeholders": {}
+    },
+    "advice2": "A very small number of unusually sensitive people should reduce outdoor activities",
+    "@simplifiedChinese": {
+        "description": "A very small number of unusually sensitive people should reduce outdoor activities",
+        "type": "text",
+        "placeholders": {}
+    },
+    "advice3": "Children, the elderly, and those with heart and respiratory diseases should reduce prolonged, high-intensity outdoor exercise",
+    "@simplifiedChinese": {
+        "description": "Children, the elderly, and those with heart and respiratory diseases should reduce prolonged, high-intensity outdoor exercise",
+        "type": "text",
+        "placeholders": {}
+    },
+    "advice4": "Healthy people have reduced exercise tolerance, have obvious strong symptoms, and qualify for certain diseases in advance",
+    "@simplifiedChinese": {
+        "description": "Children, the elderly and patients with heart disease and respiratory disease should avoid reducing long-term, high-intensity outdoor exercise, and the general population should reduce outdoor exercise in moderation",
+        "type": "text",
+        "placeholders": {}
+    },
+    "advice5": "Children, the elderly and people with heart and lung diseases should stay indoors, stop outdoor sports, and the general population should reduce outdoor activities",
+    "@simplifiedChinese": {
+        "description": "Children, the elderly and people with heart and lung diseases should stay indoors, stop outdoor sports, and the general population should reduce outdoor activities",
+        "type": "text",
+        "placeholders": {}
+    },
+    "advice6": "Children, the elderly and heart disease patients should stay indoors and avoid physical labor, and the general population should avoid outdoor activities",
+    "@simplifiedChinese": {
+        "description": "Children, the elderly and heart disease patients should stay indoors and avoid physical labor, and the general population should avoid outdoor activities",
+        "type": "text",
+        "placeholders": {}
+    },
+    "exercise": "Exercise",
+    "@simplifiedChinese": {
+        "description": "Exercise",
+        "type": "text",
+        "placeholders": {}
+    },
+    "carWash": "Car Wash",
+    "@simplifiedChinese": {
+        "description": "Car Wash",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dressing": "Dressing",
+    "@simplifiedChinese": {
+        "description": "Dressing",
+        "type": "text",
+        "placeholders": {}
+    },
+    "fishing": "Fishing",
+    "@simplifiedChinese": {
+        "description": "Fishing",
+        "type": "text",
+        "placeholders": {}
+    },
+    "travel": "Travel",
+    "@simplifiedChinese": {
+        "description": "Travel",
+        "type": "text",
+        "placeholders": {}
+    },
+    "hayFever": "Hay Fever",
+    "@simplifiedChinese": {
+        "description": "Hay Fever",
+        "type": "text",
+        "placeholders": {}
+    },
+    "comfort": "Comfort",
+    "@simplifiedChinese": {
+        "description": "Comfort",
+        "type": "text",
+        "placeholders": {}
+    },
+    "cold": "Cold",
+    "@simplifiedChinese": {
+        "description": "Cold",
+        "type": "text",
+        "placeholders": {}
+    },
+    "diffusion": "Diffusion",
+    "@simplifiedChinese": {
+        "description": "Diffusion",
+        "type": "text",
+        "placeholders": {}
+    },
+    "conditioner": "Air Conditioner",
+    "@simplifiedChinese": {
+        "description": "Air Conditioner",
+        "type": "text",
+        "placeholders": {}
+    },
+    "sunglass": "Sunglass",
+    "@simplifiedChinese": {
+        "description": "Sunglass",
+        "type": "text",
+        "placeholders": {}
+    },
+    "makeup": "Makeup",
+    "@simplifiedChinese": {
+        "description": "Makeup",
+        "type": "text",
+        "placeholders": {}
+    },
+    "drying": "Drying",
+    "@simplifiedChinese": {
+        "description": "Drying",
+        "type": "text",
+        "placeholders": {}
+    },
+    "transportation": "Transportation",
+    "@simplifiedChinese": {
+        "description": "Transportation",
+        "type": "text",
+        "placeholders": {}
+    },
+    "sunscreen": "Sunscreen",
+    "@simplifiedChinese": {
+        "description": "Sunscreen",
+        "type": "text",
+        "placeholders": {}
+    },
+    "exerciseDesc": "The exercise index is a suggestion for the general public whether it is suitable for exercise, considering the impact of meteorological factors and the environment on the human body, including ultraviolet rays, wind, air pressure, temperature, light, rain, snow, sand and dust. The sports index is divided into 3 grades, the higher the grade, the less suitable for exercise.",
+    "@simplifiedChinese": {
+        "description": "exercise Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "carWashDesc": "The car wash index is to consider whether there is rain and snow in the past 12 hours and the next 24 hours, whether there is snow and mud on the road, whether it is easy to splash the mud on the bright car, whether there is sand and dust weather and other conditions, to provide the majority of car lovers whether Recommendations for a suitable car wash. The car wash index is divided into 4 grades, the higher the grade, the less suitable for car wash.",
+    "@simplifiedChinese": {
+        "description": "Car Wash Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dressingDesc": "The clothing index is based on the meteorological conditions such as sky conditions, temperature, humidity and wind, which are the most important influences of the natural environment on human body temperature. Generally speaking, the lower the temperature and the higher the wind speed, the higher the level of clothing index. The weather index of clothing is divided into 8 grades. The smaller the index, the thinner the thickness of clothing.",
+    "@simplifiedChinese": {
+        "description": "Dressing Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "fishingDesc": "The fishing index is based on the influence of meteorological factors on fishing, and extracts the main meteorological factors that affect fishing: temperature, wind speed, weather phenomena, temperature diurnal changes, etc., and calculates after comprehensive consideration. Using the fishing index, people can choose suitable water areas. Fishing under favorable weather conditions can not only achieve greater harvests, but also achieve the purpose of leisure and entertainment. The fishing index is divided into 3 levels. The higher the level, the less suitable it is for fishing.",
+    "@simplifiedChinese": {
+        "description": "Fishing Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "uvDesc": "The UV index is a rating of the intensity of UV rays from weak to strong. Excessive UV exposure can cause erythema, hyperpigmentation, suppressed immune system, skin melanoma, skin cancer, cataract, etc., so referring to the forecast of UV index can help people avoid the most intense UV radiation in daily life. During that period of time, bask in the sun or go out wearing long-sleeved shirts, applying sunscreen, etc., to prevent excessive exposure to strong ultraviolet rays from harming human health. The UV index is divided into 5 grades, the higher the grade, the stronger the UV rays and give corresponding opinions.",
+    "@simplifiedChinese": {
+        "description": "UV  Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "travelDesc": "The tourism index is a travel suggestion provided by the meteorological department to citizens from the perspective of weather based on changes in the weather, combined with temperature, wind speed and specific weather phenomena. Generally, the weather is fine and the temperature is suitable for traveling. However, it is not suitable for traveling under extremely hot or cold weather conditions. The tourism index also integrates the living weather indexes such as somatosensory index, clothing index, cold index, ultraviolet index, etc., to provide citizens with more detailed and practical travel tips. The tourism index is divided into 5 levels, the higher the level, the less suitable for tourism.",
+    "@simplifiedChinese": {
+        "description": "Travel Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "hayFeverDesc": "The pollen allergy meteorological index refers to the influence level of meteorological conditions on the pollen allergic reaction. The meteorological conditions that affect the pollen allergy index include: weather phenomenon, wind, maximum temperature and relative humidity. The pollen allergy meteorological index is divided into 5 grades, and the higher the grade, the easier it is to induce pollen allergy symptoms.",
+    "@simplifiedChinese": {
+        "description": "Hay Fever Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "comfortDesc": "The comfort index combines the comprehensive effects of temperature, humidity, wind and other meteorological elements on the human body, indicating whether the human body is comfortable in the atmospheric environment, suggesting that people can adjust their physiology and adapt to the cold and warm environment according to changes in the weather, as well as prevent the weather from being cold and hot. The mutation index is convenient for people to understand the comfort level of the body in the changeable weather, and to prevent diseases caused by the discomfort of the human body caused by certain weather. The comfort index is divided into 9 grades. The higher the grade, the greater the impact of meteorological conditions on human comfort, and the worse the comfort.",
+    "@simplifiedChinese": {
+        "description": "Comfort Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "coldDesc": "The cold index is proposed by the meteorological department according to the degree of influence of meteorological conditions on people's occurrence of a cold, according to the meteorological factors such as temperature, humidity, wind speed, weather phenomenon, and daily temperature difference, so that citizens, especially children and the elderly, are prone to the occurrence of colds. While paying attention to the weather forecast, the crowd can use the cold index to determine the probability of a cold, the increase or decrease of clothes, and the arrangement of activities. The cold index is divided into four grades. The higher the grade, the higher the incidence of colds, and the more favorable meteorological factors are to the occurrence of colds.",
+    "@simplifiedChinese": {
+        "description": "Cold Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "diffusionDesc": "The air pollution diffusion condition index is to evaluate the dilution, diffusion, accumulation and removal capabilities of air pollutants in the future from a meteorological point of view without considering the pollution source. The main meteorological factors considered are temperature, humidity, wind speed and weather phenomena. Categorize meteorological conditions. The air pollution diffusion condition index is divided into 5 grades. The higher the grade, the less favorable the meteorological conditions are for the diffusion of pollutants.",
+    "@simplifiedChinese": {
+        "description": "Diffusion Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "conditionerDesc": "The Air Conditioning On Index is an index that instructs people to use air conditioners appropriately based on the physiological and health requirements of the human body, taking into account the temperature, humidity and temperature for three consecutive days. The air-conditioning opening index is divided into 5 levels. The lower the air-conditioning opening stage, the more the refrigeration and air-conditioning should be turned on to cool down. When the stage is the highest, appropriate heating measures should be taken.",
+    "@simplifiedChinese": {
+        "description": "Air Conditioner Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "sunglassDesc": "The sunglasses index refers to an index developed by comprehensively considering meteorological factors and the characteristics of sunglasses, which can characterize the necessity of sunglasses for solar radiation protection. The influence of various meteorological factors on the solar radiation intensity, and according to the solar radiation intensity level and the characteristics of light transmittance and UV protection level of different types of sunglasses, give reasonable suggestions on the types of sunglasses suitable for users to wear.",
+    "@simplifiedChinese": {
+        "description": "Sunglass Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "makeupDesc": "The makeup index is an index based on the impact of meteorological conditions on human skin, mainly including temperature, humidity, wind speed, and ultraviolet intensity. Oil, anti-dehydration and a series of measures to reduce the damage to the skin caused by bad weather conditions.",
+    "@simplifiedChinese": {
+        "description": "Makeup Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dryingDesc": "The drying index is based on the impact of temperature, wind speed, and sky conditions on drying, and grading people's suitability for drying activities. The drying index is divided into 5 grades. The lower the grade, the more favorable the weather conditions are for people to carry out drying activities.",
+    "@simplifiedChinese": {
+        "description": "Drying Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "transportationDesc": "The traffic weather index is classified according to the influence of weather phenomena such as rain, snow, fog, sand and dust, cloudy and sunny, etc. on the traffic conditions. The visibility is mainly used as the standard, and the description of the road surface conditions is included to remind the majority of drivers and friends in this kind of weather. When traveling under weather conditions, check whether the visibility is good, whether the braking distance should be extended, whether traffic accidents are likely to occur, etc., so as to reduce the loss of personnel and property caused by unfavorable weather conditions. The traffic index is divided into 5 grades. The higher the grade, the greater the impact of weather phenomena on traffic.",
+    "@simplifiedChinese": {
+        "description": "Transportation Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "sunscreenDesc": "The SPF is based on the intensity of UV rays, the stronger the UV rays, the higher the SPF. People should take appropriate sun protection measures according to the SPF to avoid UV damage to the human body. The SPF is divided into 5 levels. The higher the level, the more protection should be strengthened when going out. It is recommended to apply a higher SPF multiple, PA++ sunscreen skin care products, and reapply at any time.",
+    "@simplifiedChinese": {
+        "description": "Sunscreen Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "monday": "Monday",
+    "@simplifiedChinese": {
+        "description": "Monday",
+        "type": "text",
+        "placeholders": {}
+    },
+    "tuesday": "Tuesday",
+    "@simplifiedChinese": {
+        "description": "Tuesday",
+        "type": "text",
+        "placeholders": {}
+    },
+    "wednesday": "Wednesday",
+    "@simplifiedChinese": {
+        "description": "Wednesday",
+        "type": "text",
+        "placeholders": {}
+    },
+    "thursday": "Thursday",
+    "@simplifiedChinese": {
+        "description": "Thursday",
+        "type": "text",
+        "placeholders": {}
+    },
+    "friday": "Friday",
+    "@simplifiedChinese": {
+        "description": "Friday",
+        "type": "text",
+        "placeholders": {}
+    },
+    "saturday": "Saturday",
+    "@simplifiedChinese": {
+        "description": "Saturday",
+        "type": "text",
+        "placeholders": {}
+    },
+    "sunday": "Sunday",
+    "@simplifiedChinese": {
+        "description": "Sunday",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dateTime": "MM-dd",
+    "@simplifiedChinese": {
+        "description": "Date Time",
+        "type": "text",
+        "placeholders": {}
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "code": "200",
+    "updateTime": "2022-02-22T23:42+08:00",
+    "fxLink": "http://hfx.link/2ax4",
+    "daily": [
+        {
+            "fxDate": "2022-02-23",
+            "aqi": "48",
+            "level": "1",
+            "category": "优",
+            "primary": "NA"
+        },
+        {
+            "fxDate": "2022-02-24",
+            "aqi": "91",
+            "level": "2",
+            "category": "良",
+            "primary": "PM2.5"
+        },
+        {
+            "fxDate": "2022-02-25",
+            "aqi": "111",
+            "level": "3",
+            "category": "轻度污染",
+            "primary": "PM2.5"
+        },
+        {
+            "fxDate": "2022-02-26",
+            "aqi": "57",
+            "level": "2",
+            "category": "良",
+            "primary": "PM2.5"
+        },
+        {
+            "fxDate": "2022-02-27",
+            "aqi": "91",
+            "level": "2",
+            "category": "良",
+            "primary": "PM2.5"
+        }
+    ],
+    "refer": {
+        "sources": [
+            "QWeather",
+            "CNEMC"
+        ],
+        "license": [
+            "commercial license"
+        ]
+    }
+}

@@ -1,0 +1,861 @@
+{
+    "@@last_modified": "2022-01-16T13:10:08.408311",
+    "settings": "设置",
+    "@settings": {
+        "description": "settings",
+        "type": "text",
+        "placeholders": {}
+    },
+    "aboutApp": "关于应用",
+    "@aboutApp": {
+      "description": "About App",
+      "type": "text",
+      "placeholders": {}
+    },
+    "developer": "开发者: 刘文博",
+    "@developer": {
+      "description": "developer name",
+      "type": "text",
+      "placeholders": {}
+    },
+    "viewLicense": "查看许可",
+    "@developer": {
+      "description": "view license",
+      "type": "text",
+      "placeholders": {}
+    },
+    "unitChoice": "单位选择",
+    "@developer": {
+      "description": "unit choice",
+      "type": "text",
+      "placeholders": {}
+    },
+    "metric": "公制",
+    "@developer": {
+      "description": "the metric",
+      "type": "text",
+      "placeholders": {}
+    },
+    "imperial": "英制",
+    "@developer": {
+      "description": "the imperial",
+      "type": "text",
+      "placeholders": {}
+    },
+    "unitInfo": "有一些数据项不存在英制单位的，统一使用公制单位。",
+    "@developer": {
+      "description": "unit information",
+      "type": "text",
+      "placeholders": {}
+    },
+    "celsius": "摄氏度",
+    "@developer": {
+      "description": "the celsius",
+      "type": "text",
+      "placeholders": {}
+    },
+    "fahrenheit": "华氏度",
+    "@developer": {
+      "description": "the fahrenheit",
+      "type": "text",
+      "placeholders": {}
+    },
+    "windSpeed": "风速",
+    "@developer": {
+      "description": "wind speed",
+      "type": "text",
+      "placeholders": {}
+    },
+    "visibility": "能见度",
+    "@developer": {
+      "description": "visibility",
+      "type": "text",
+      "placeholders": {}
+    },
+    "appearance": "外观",
+    "@developer": {
+      "description": "Appearance",
+      "type": "text",
+      "placeholders": {}
+    },
+    "system": "跟随系统",
+    "@followSystem": {
+        "description": "Follow System",
+        "type": "text",
+        "placeholders": {}
+    },
+    "lightMode": "浅色",
+    "@lightMode": {
+      "description": "Light Mode",
+      "type": "text",
+      "placeholders": {}
+    },
+    "dark": "深色",
+    "@darkMode": {
+      "description": "Dark Mode",
+      "type": "text",
+      "placeholders": {}
+    },
+    "demoArea": "柳北 柳州",
+    "@darkMode": {
+        "description": "Demo Area: LiuBei LiuZhou",
+        "type": "text",
+        "placeholders": {}
+    },
+    "demoIconText": "晴间多云",
+    "@darkMode": {
+        "description": "Demo IconText: Partly Cloudy",
+        "type": "text",
+        "placeholders": {}
+    },
+    "language": "多语言",
+    "@language": {
+      "description": "language settings",
+      "type": "text",
+      "placeholders": {}
+    },
+    "english": "英文",
+    "@english": {
+      "description": "English",
+      "type": "text",
+      "placeholders": {}
+    },
+    "simplifiedChinese": "简体中文",
+    "@simplifiedChinese": {
+      "description": "Simplified Chines",
+      "type": "text",
+      "placeholders": {}
+    },
+    "langInfo": "某些数据（如生活指数、灾害预警的详情）中的部分内容仅支持本地语言或英语。当数据不匹配设置的语言时，将返回英文或其本地语言结果。",
+    "@simplifiedChinese": {
+      "description": "Language Information",
+      "type": "text",
+      "placeholders": {}
+    },
+    "noDisaster": "当前地区未发生气象灾害",
+    "@simplifiedChinese": {
+        "description": "There are no meteorological disasters in the current region",
+        "type": "text",
+        "placeholders": {}
+    },
+    "noDisasterNearby": "附近地区未发生气象灾害",
+    "@simplifiedChinese": {
+        "description": "No meteorological disaster occurred in nearby areas",
+        "type": "text",
+        "placeholders": {}
+    },
+    "variousDisaster": "多种气象灾害正在发生",
+    "@simplifiedChinese": {
+        "description": "Various weather disasters are happening",
+        "type": "text",
+        "placeholders": {}
+    },
+    "warning": "预警",
+    "@simplifiedChinese": {
+        "description": "Warning",
+        "type": "text",
+        "placeholders": {}
+    },
+    "warningStart": "预警始于",
+    "@simplifiedChinese": {
+        "description": "Warning Starts",
+        "type": "text",
+        "placeholders": {}
+    },
+    "warningEnd": "预警止于",
+    "@simplifiedChinese": {
+        "description": "Warning Ends",
+        "type": "text",
+        "placeholders": {}
+    },
+    "nearbyWarning": "附近预警",
+    "@simplifiedChinese": {
+        "description": "Nearby Warning",
+        "type": "text",
+        "placeholders": {}
+    },
+    "city": "城市",
+    "@simplifiedChinese": {
+        "description": "City",
+        "type": "text",
+        "placeholders": {}
+    },
+    "now": "现在",
+    "@simplifiedChinese": {
+        "description": "Now",
+        "type": "text",
+        "placeholders": {}
+    },
+    "sensation": "体感温度",
+    "@simplifiedChinese": {
+        "description": "Sensation",
+        "type": "text",
+        "placeholders": {}
+    },
+    "precipitation": "降水量",
+    "@simplifiedChinese": {
+        "description": "Precipitation",
+        "type": "text",
+        "placeholders": {}
+    },
+    "visibility": "能见度",
+    "@simplifiedChinese": {
+        "description": "Visibility",
+        "type": "text",
+        "placeholders": {}
+    },
+    "cloudiness": "云量",
+    "@simplifiedChinese": {
+        "description": "Cloudiness",
+        "type": "text",
+        "placeholders": {}
+    },
+    "humidity": "相对湿度",
+    "@simplifiedChinese": {
+        "description": "Humidity",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dewPoint": "露点温度",
+    "@simplifiedChinese": {
+        "description": "Dew Point",
+        "type": "text",
+        "placeholders": {}
+    },
+    "probability": "降水概率",
+    "@simplifiedChinese": {
+        "description": "Probability",
+        "type": "text",
+        "placeholders": {}
+    },
+    "windScale": "风向",
+    "@simplifiedChinese": {
+        "description": "Wind Scale",
+        "type": "text",
+        "placeholders": {}
+    },
+    "pressure": "大气压强",
+    "@simplifiedChinese": {
+        "description": "Pressure",
+        "type": "text",
+        "placeholders": {}
+    },
+    "uv": "紫外线",
+    "@simplifiedChinese": {
+        "description": "UV",
+        "type": "text",
+        "placeholders": {}
+    },
+    "level": "级",
+    "@simplifiedChinese": {
+        "description": "Level",
+        "type": "text",
+        "placeholders": {}
+    },
+    "more": "预报更多",
+    "@simplifiedChinese": {
+        "description": "More",
+        "type": "text",
+        "placeholders": {}
+    },
+    "postedon": "发布",
+    "@simplifiedChinese": {
+        "description": "Posted on",
+        "type": "text",
+        "placeholders": {}
+    },
+    "airQuality": "空气质量",
+    "@simplifiedChinese": {
+        "description": "Air Quality",
+        "type": "text",
+        "placeholders": {}
+    },
+    "airForecast": "空气质量预报",
+    "@simplifiedChinese": {
+        "description": "Air Quality Forecast",
+        "type": "text",
+        "placeholders": {}
+    },
+    "healthEffects": "健康影响",
+    "@simplifiedChinese": {
+        "description": "Health Effects",
+        "type": "text",
+        "placeholders": {}
+    },
+    "recommended": "建议措施",
+    "@simplifiedChinese": {
+        "description": "Recommended Action",
+        "type": "text",
+        "placeholders": {}
+    },
+    "forecast24": "24小时预报",
+    "@simplifiedChinese": {
+        "description": "24 hour forecast",
+        "type": "text",
+        "placeholders": {}
+    },
+    "forecast72": "72小时预报",
+    "@simplifiedChinese": {
+        "description": "72 hour forecast",
+        "type": "text",
+        "placeholders": {}
+    },
+    "details": "详细",
+    "@simplifiedChinese": {
+        "description": "Details",
+        "type": "text",
+        "placeholders": {}
+    },
+    "forecast7": "未来7日预报",
+    "@simplifiedChinese": {
+        "description": "7 days forecast",
+        "type": "text",
+        "placeholders": {}
+    },
+    "forecast30": "30天预报",
+    "@simplifiedChinese": {
+        "description": "30 Day Forecast",
+        "type": "text",
+        "placeholders": {}
+    },
+    "showLess": "显示更少",
+    "@simplifiedChinese": {
+        "description": "Show Less",
+        "type": "text",
+        "placeholders": {}
+    },
+    "showMore": "显示更多",
+    "@simplifiedChinese": {
+        "description": "Show More",
+        "type": "text",
+        "placeholders": {}
+    },
+    "sheet": "列表",
+    "@simplifiedChinese": {
+        "description": "Sheet",
+        "type": "text",
+        "placeholders": {}
+    },
+    "chart": "图表",
+    "@simplifiedChinese": {
+        "description": "Chart",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dayRain": "天下雨",
+    "@simplifiedChinese": {
+        "description": "Chadays of rainrt",
+        "type": "text",
+        "placeholders": {}
+    },
+    "daySnow": "天下雪",
+    "@simplifiedChinese": {
+        "description": "days of snow",
+        "type": "text",
+        "placeholders": {}
+    },
+    "highestTemp": "最高温 ",
+    "@simplifiedChinese": {
+        "description": "the highest temperature",
+        "type": "text",
+        "placeholders": {}
+    },
+    "lowestTemp": "最低温",
+    "@simplifiedChinese": {
+        "description": "the lowest temperature",
+        "type": "text",
+        "placeholders": {}
+    },
+    "tempHighest": "最高温",
+    "@simplifiedChinese": {
+        "description": "Highest",
+        "type": "text",
+        "placeholders": {}
+    },
+    "tempLowest": "最低温",
+    "@simplifiedChinese": {
+        "description": "Lowest",
+        "type": "text",
+        "placeholders": {}
+    },
+    "willbe30": "末来30天将有",
+    "@simplifiedChinese": {
+        "description": "In the next 30 days there will be",
+        "type": "text",
+        "placeholders": {}
+    },
+    "sunMoon": "太阳和月亮",
+    "@simplifiedChinese": {
+        "description": "Sun and Moon",
+        "type": "text",
+        "placeholders": {}
+    },
+    "sunRise": "日出",
+    "@simplifiedChinese": {
+        "description": "Sun Rise",
+        "type": "text",
+        "placeholders": {}
+    },
+    "sunSet": "日落",
+    "@simplifiedChinese": {
+        "description": "Sun Set",
+        "type": "text",
+        "placeholders": {}
+    },
+    "moonRise": "月升",
+    "@simplifiedChinese": {
+        "description": "Moon Rise",
+        "type": "text",
+        "placeholders": {}
+    },
+    "moonSet": "月落",
+    "@simplifiedChinese": {
+        "description": "Moon Set",
+        "type": "text",
+        "placeholders": {}
+    },
+    "livingIndex": "生活指数",
+    "@simplifiedChinese": {
+        "description": "Living Index",
+        "type": "text",
+        "placeholders": {}
+    },
+    "hour": "时",
+    "@simplifiedChinese": {
+        "description": "Hour",
+        "type": "text",
+        "placeholders": {}
+    },
+    "regional": "地区管理",
+    "@simplifiedChinese": {
+        "description": "Regional management",
+        "type": "text",
+        "placeholders": {}
+    },
+    "cancel": "取消",
+    "@simplifiedChinese": {
+        "description": "Cancel",
+        "type": "text",
+        "placeholders": {}
+    },
+    "search": "搜索",
+    "@simplifiedChinese": {
+        "description": "Search",
+        "type": "text",
+        "placeholders": {}
+    },
+    "done": "完成",
+    "@simplifiedChinese": {
+        "description": "Done",
+        "type": "text",
+        "placeholders": {}
+    },
+    "edit": "编辑",
+    "@simplifiedChinese": {
+        "description": "Edit",
+        "type": "text",
+        "placeholders": {}
+    },
+    "clear": "清除",
+    "@simplifiedChinese": {
+        "description": "Clear",
+        "type": "text",
+        "placeholders": {}
+    },
+    "delete": "删除",
+    "@simplifiedChinese": {
+        "description": "Delete",
+        "type": "text",
+        "placeholders": {}
+    },
+    "currentLocation": "当前位置",
+    "@simplifiedChinese": {
+        "description": "Current Location",
+        "type": "text",
+        "placeholders": {}
+    },
+    "areasConcern": "关注的地区",
+    "@simplifiedChinese": {
+        "description": "Areas Of concern",
+        "type": "text",
+        "placeholders": {}
+    },
+    "viewed": "最近查看",
+    "@simplifiedChinese": {
+        "description": "Viewed Recently",
+        "type": "text",
+        "placeholders": {}
+    },
+    "weakest": "最弱",
+    "@simplifiedChinese": {
+        "description": "Weakest",
+        "type": "text",
+        "placeholders": {}
+    },
+    "weaker": "较弱",
+    "@simplifiedChinese": {
+        "description": "Weaker",
+        "type": "text",
+        "placeholders": {}
+    },
+    "medium": "中等",
+    "@simplifiedChinese": {
+        "description": "Medium",
+        "type": "text",
+        "placeholders": {}
+    },
+    "strong": "较强",
+    "@simplifiedChinese": {
+        "description": "Strong",
+        "type": "text",
+        "placeholders": {}
+    },
+    "strongest": "最强",
+    "@simplifiedChinese": {
+        "description": "Strongest",
+        "type": "text",
+        "placeholders": {}
+    },
+    "excellent": "优",
+    "@simplifiedChinese": {
+        "description": "Excellent",
+        "type": "text",
+        "placeholders": {}
+    },
+    "good": "良",
+    "@simplifiedChinese": {
+        "description": "Good",
+        "type": "text",
+        "placeholders": {}
+    },
+    "light": "轻度污染",
+    "@simplifiedChinese": {
+        "description": "Light Pollution",
+        "type": "text",
+        "placeholders": {}
+    },
+    "moderately": "中度污染",
+    "@simplifiedChinese": {
+        "description": "Moderately Polluted",
+        "type": "text",
+        "placeholders": {}
+    },
+    "heavy": "重度污染",
+    "@simplifiedChinese": {
+        "description": "Heavy Pollution",
+        "type": "text",
+        "placeholders": {}
+    },
+    "seriousn": "严重污染",
+    "@simplifiedChinese": {
+        "description": "Serious Pollution",
+        "type": "text",
+        "placeholders": {}
+    },
+    "influence1": "空气质量令人满意，基本无空气污染",
+    "@simplifiedChinese": {
+        "description": "Satisfactory air quality, basically no air pollution",
+        "type": "text",
+        "placeholders": {}
+    },
+    "influence2": "空气质量可接受，但某些污染物可能对极少数异常敏感人群健康有较弱影响",
+    "@simplifiedChinese": {
+        "description": "Air quality is acceptable, but some pollutants may have weaker health effects for a very small number of exceptionally sensitive populations",
+        "type": "text",
+        "placeholders": {}
+    },
+    "influence3": "易感人群症状有轻度加剧，健康人群出现刺激症状",
+    "@simplifiedChinese": {
+        "description": "Symptoms are mildly aggravated in susceptible people, and irritation symptoms appear in healthy people",
+        "type": "text",
+        "placeholders": {}
+    },
+    "influence4": "进一步加剧易感人群症状，可能对健康人群心脏、呼吸系统有影响",
+    "@simplifiedChinese": {
+        "description": "Further aggravate the symptoms of susceptible people and may have an impact on the heart and respiratory system of healthy people",
+        "type": "text",
+        "placeholders": {}
+    },
+    "influence5": "心脏病和肺病患者症状显著加剧，运动耐受力降低，健康人群普遍出现症状",
+    "@simplifiedChinese": {
+        "description": "Patients with heart disease and lung disease have significantly worse symptoms, reduced exercise tolerance, and symptoms are common in healthy people",
+        "type": "text",
+        "placeholders": {}
+    },
+    "influence6": "健康人群运动耐受力降低，有明显强烈症状，提前出线某些疾病",
+    "@simplifiedChinese": {
+        "description": "Healthy people have reduced exercise tolerance, have obvious strong symptoms, and qualify for certain diseases in advance",
+        "type": "text",
+        "placeholders": {}
+    },
+    "advice1": "各类人群可正常活动",
+    "@simplifiedChinese": {
+        "description": "All kinds of people can do normal activities",
+        "type": "text",
+        "placeholders": {}
+    },
+    "advice2": "极少数异常敏感人群应减少户外活动",
+    "@simplifiedChinese": {
+        "description": "A very small number of unusually sensitive people should reduce outdoor activities",
+        "type": "text",
+        "placeholders": {}
+    },
+    "advice3": "儿童、老年人及心脏病、呼吸系统疾病患者应减少长时间、高强度的户外锻炼",
+    "@simplifiedChinese": {
+        "description": "Children, the elderly, and those with heart and respiratory diseases should reduce prolonged, high-intensity outdoor exercise",
+        "type": "text",
+        "placeholders": {}
+    },
+    "advice4": "儿童、老年人及心脏病、呼吸系统疾病患者避免减少长时间、高强度的户外锻炼，一般人群适量减少户外运动",
+    "@simplifiedChinese": {
+        "description": "Children, the elderly and patients with heart disease and respiratory disease should avoid reducing long-term, high-intensity outdoor exercise, and the general population should reduce outdoor exercise in moderation",
+        "type": "text",
+        "placeholders": {}
+    },
+    "advice5": "儿童、老年人和心脏病、肺病患者应停留在室内，停止户外运动，一般人群减少户外活动",
+    "@simplifiedChinese": {
+        "description": "Children, the elderly and people with heart and lung diseases should stay indoors, stop outdoor sports, and the general population should reduce outdoor activities",
+        "type": "text",
+        "placeholders": {}
+    },
+    "advice6": "儿童、老年人和心脏病、病人应停留在室内，避免体力劳动，一般人群应避免户外活动",
+    "@simplifiedChinese": {
+        "description": "Children, the elderly and heart disease patients should stay indoors and avoid physical labor, and the general population should avoid outdoor activities",
+        "type": "text",
+        "placeholders": {}
+    },
+    "exercise": "运动",
+    "@simplifiedChinese": {
+        "description": "Exercise",
+        "type": "text",
+        "placeholders": {}
+    },
+    "carWash": "洗车",
+    "@simplifiedChinese": {
+        "description": "Car Wash",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dressing": "穿衣",
+    "@simplifiedChinese": {
+        "description": "Dressing",
+        "type": "text",
+        "placeholders": {}
+    },
+    "fishing": "钓鱼",
+    "@simplifiedChinese": {
+        "description": "Fishing",
+        "type": "text",
+        "placeholders": {}
+    },
+    "travel": "旅游",
+    "@simplifiedChinese": {
+        "description": "Travel",
+        "type": "text",
+        "placeholders": {}
+    },
+    "hayFever": "花粉过敏",
+    "@simplifiedChinese": {
+        "description": "Hay Fever",
+        "type": "text",
+        "placeholders": {}
+    },
+    "comfort": "舒适度",
+    "@simplifiedChinese": {
+        "description": "Comfort",
+        "type": "text",
+        "placeholders": {}
+    },
+    "cold": "感冒",
+    "@simplifiedChinese": {
+        "description": "Cold",
+        "type": "text",
+        "placeholders": {}
+    },
+    "diffusion": "污染扩散",
+    "@simplifiedChinese": {
+        "description": "Diffusion",
+        "type": "text",
+        "placeholders": {}
+    },
+    "conditioner": "空调开启",
+    "@simplifiedChinese": {
+        "description": "Air Conditioner",
+        "type": "text",
+        "placeholders": {}
+    },
+    "sunglass": "太阳镜",
+    "@simplifiedChinese": {
+        "description": "Sunglass",
+        "type": "text",
+        "placeholders": {}
+    },
+    "makeup": "化妆",
+    "@simplifiedChinese": {
+        "description": "Makeup",
+        "type": "text",
+        "placeholders": {}
+    },
+    "drying": "晾晒",
+    "@simplifiedChinese": {
+        "description": "Drying",
+        "type": "text",
+        "placeholders": {}
+    },
+    "transportation": "交通",
+    "@simplifiedChinese": {
+        "description": "Transportation",
+        "type": "text",
+        "placeholders": {}
+    },
+    "sunscreen": "防嗮",
+    "@simplifiedChinese": {
+        "description": "Sunscreen",
+        "type": "text",
+        "placeholders": {}
+    },
+    "exerciseDesc": "运动指数是考虑气象因素和环境对人体的影响，包括紫外线、风力、气压、温度、光照以及雨雪沙尘等，为广大老百姓提供的是否适宜运动的建议。运动指数分为3级，级数越高，就越不适宜运动。",
+    "@simplifiedChinese": {
+        "description": "exercise Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "carWashDesc": "洗车指数是考虑过去12小时和未来24小时内有无雨雪天气，路面是否有积雪和泥水，是否容易使亮车溅上泥水，是否有沙尘天气等条件，给广大爱车族提供是否适宜洗车的建议。洗车指数分为4级，级数越高，就越不适宜洗车。",
+    "@simplifiedChinese": {
+        "description": "Car Wash Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dressingDesc": "穿衣指数是根据自然环境对人体感觉温度影响最主要的天空状况、气温、湿度及风等气象条件，对人们适宜穿着的服装进行分级，以提醒人们根据天气变化适当着装。一般来说，温度较低、风速较大，则穿衣指数级别较高。穿衣气象指数共分8级，指数越小，穿衣的厚度越薄。",
+    "@simplifiedChinese": {
+        "description": "Dressing Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "fishingDesc": "钓鱼指数是根据气象因素对垂钓的影响程度，提取出影响垂钓的主要气象因素：温度、风速、天气现象、温度日变化等，进行综合考虑计算得出，利用钓鱼指数人们可以选择合适的水域，在有利于钓鱼的气象条件下垂钓，不仅能取得较大的收获，还可以达到休闲娱乐的目的。钓鱼指数分为3级，级数越高，越不适合钓鱼。",
+    "@simplifiedChinese": {
+        "description": "Fishing Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "uvDesc": "紫外线指数是对紫外线强度由弱到强进行分级。由于过量的紫外线照射可使人体产生红斑、色素沉着、免疫系统受到抑制，患皮肤黑瘤、皮肤癌及白内障等，因此参照紫外线指数的预报能够帮助人们在日常生活中避免在紫外线辐射最强烈的那一段时间里晒太阳或外出披长袖衬衣、涂抹防晒油等，防止强烈的紫外线过度照射危害人体健康。紫外线指数分为5级，级数越高，紫外线越强烈并给予相应意见。",
+    "@simplifiedChinese": {
+        "description": "UV  Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "travelDesc": "旅游指数是气象部门根据天气的变化情况，结合气温、风速和具体的天气现象，从天气的角度出发给市民提供的出游建议。一般天气晴好，温度适宜的情况下最适宜出游；而酷热或严寒的天气条件下，则不适宜外出旅游。旅游指数还综合了体感指数、穿衣指数、感冒指数、紫外线指数等生活气象指数，给市民提供更加详细实用的出游提示。旅游指数分为5级，级数越高，越不适合旅游。",
+    "@simplifiedChinese": {
+        "description": "Travel Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "hayFeverDesc": "花粉过敏气象指数是指气象条件对花粉过敏反应的影响等级，影响花粉过敏指数的气象条件包括：天气现象、风力、最高温度和相对湿度。花粉过敏气象指数分为5级，级数越高，越容易诱发花粉过敏症状。",
+    "@simplifiedChinese": {
+        "description": "Hay Fever Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "comfortDesc": "舒适度指数是结合温度、湿度、风等气象要素对人体综合作用，表征人体在大气环境中舒适与否，提示人们可以根据天气的变化，来调节自身生理及适应冷暖环境，以及防范天气冷热突变的指数，便于人们了解在多变的天气下身体的舒适程度，预防由某些天气造成的人体不舒适而导致的疾病等。舒适度指数分为9级，级数越高，气象条件对人体舒适感的影响越大，舒适感越差。",
+    "@simplifiedChinese": {
+        "description": "Comfort Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "coldDesc": "感冒指数是气象部门就气象条件对人们发生感冒的影响程度，根据当日温度、湿度、风速、天气现象、温度日较差等气象因素提出来的，以便市民们，特别是儿童、老人等易发人群可以在关注天气预报的同时，用感冒指数来确定感冒发生的几率和衣服的增减及活动的安排等。感冒指数分为四级，级数越高，感冒发生率就越高，气象因素对感冒的发生就越有利。",
+    "@simplifiedChinese": {
+        "description": "Cold Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "diffusionDesc": "空气污染扩散条件指数是不考虑污染源的情况下，从气象角度出发，对未来大气污染物的稀释、扩散、聚积和清除能力进行评价，主要考虑的气象因素是温度、湿度、风速和天气现象，对气象条件进行分级。空气污染扩散条件指数分为5级，级数越高气象条件越不利于污染物的扩散。",
+    "@simplifiedChinese": {
+        "description": "Diffusion Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "conditionerDesc": "空调开启指数是综合考虑了当日温度、湿度和连续三天的温度情况，根据人体的生理与健康要求，计算出指导人们适当使用空调的指数。空调开启指数分为5级，空调开启级数越低，越要开启制冷空调进行降温，级数最高时，则应适当采取供暖措施。",
+    "@simplifiedChinese": {
+        "description": "Air Conditioner Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "sunglassDesc": "太阳镜指数是指综合考虑气象因素和太阳镜特性而开发的一款能够表征太阳镜对太阳辐射防护必要性的指数；该指数充分考虑了用户所在地的季节、地理位置、正午太阳高度角、天气现象等多种气象因素对太阳辐射强度的影响，并根据太阳辐射强度等级和不同类型太阳镜的透光率和防紫外线等级特点对用户适宜佩戴的太阳镜类型给出合理建议。",
+    "@simplifiedChinese": {
+        "description": "Sunglass Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "makeupDesc": "化妆指数是根据气象条件对人的皮肤的影响制定出来的指数，主要影响有温度、湿度、风速、紫外线强度，根据不同的气象条件来采取不同的保护措施，如保湿、防晒、保湿防晒、去油、防脱水等等一系列的措施，以减少恶劣气象条件对皮肤的伤害。",
+    "@simplifiedChinese": {
+        "description": "Makeup Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dryingDesc": "晾晒指数是根据温度、风速、天空状况的预报对晾晒的影响情况，对人们进行晾晒活动的适宜程度进行分级，从而指导人们适时安排晾晒衣物等家庭用品或农作物、药材等。晾晒指数分为5级，级数越低，气象条件对人们进行晾晒活动越有利。",
+    "@simplifiedChinese": {
+        "description": "Drying Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "transportationDesc": "交通气象指数是根据雨、雪、雾、沙尘、阴晴等天气现象对交通状况的影响进行分类，其中主要以能见度为标准，并包括对路面状况的描述，以提醒广大司机朋友在此种天气状况下出行时，能见度是否良好，刹车距离是否应延长，是否容易发生交通事故等，减少由于不利天气状况而造成的人员及财产损失。交通指数分为5级，级数越高，天气现象对交通的影响越大。",
+    "@simplifiedChinese": {
+        "description": "Transportation Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "sunscreenDesc": "防晒指数是根据紫外线的强弱程度来制定的，紫外线越强，防晒指数越高。人们应根据防晒指数采取适当的防晒措施，避免紫外线对人体的造成伤害。防晒指数分为5级，级数越高，外出时越应特别加强防护，建议涂擦SPF倍数高一些，PA++的防晒护肤品，并随时补涂。",
+    "@simplifiedChinese": {
+        "description": "Sunscreen Description",
+        "type": "text",
+        "placeholders": {}
+    },
+    "monday": "周一",
+    "@simplifiedChinese": {
+        "description": "Monday",
+        "type": "text",
+        "placeholders": {}
+    },
+    "tuesday": "周二",
+    "@simplifiedChinese": {
+        "description": "Tuesday",
+        "type": "text",
+        "placeholders": {}
+    },
+    "wednesday": "周三",
+    "@simplifiedChinese": {
+        "description": "Wednesday",
+        "type": "text",
+        "placeholders": {}
+    },
+    "thursday": "周四",
+    "@simplifiedChinese": {
+        "description": "Thursday",
+        "type": "text",
+        "placeholders": {}
+    },
+    "friday": "周五",
+    "@simplifiedChinese": {
+        "description": "Friday",
+        "type": "text",
+        "placeholders": {}
+    },
+    "saturday": "周六",
+    "@simplifiedChinese": {
+        "description": "Saturday",
+        "type": "text",
+        "placeholders": {}
+    },
+    "sunday": "周日",
+    "@simplifiedChinese": {
+        "description": "Sunday",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dateTime": "MM月dd日",
+    "@simplifiedChinese": {
+        "description": "Date Time",
+        "type": "text",
+        "placeholders": {}
+    }
+}

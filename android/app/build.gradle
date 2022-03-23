@@ -1,0 +1,99 @@
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterRoot = localProperties.getProperty('flutter.sdk')
+if (flutterRoot == null) {
+    throw new GradleException("Flutter SDK not found. Define location with flutter.sdk in the local.properties file.")
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+def debugKeystorePropertiesFile = rootProject.file('keystores/debug_key.properties')
+if (debugKeystorePropertiesFile.exists()) {
+    localProperties.load(new FileInputStream(debugKeystorePropertiesFile))
+}
+
+def releaseKeystorePropertiesFile = rootProject.file('keystores/release_key.properties')
+if (releaseKeystorePropertiesFile.exists()) {
+    localProperties.load(new FileInputStream(releaseKeystorePropertiesFile))
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+
+android {
+    compileSdkVersion flutter.compileSdkVersion
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    defaultConfig {
+        // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+        applicationId "com.lwb.weather_me"
+        minSdkVersion flutter.minSdkVersion
+        targetSdkVersion flutter.targetSdkVersion
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+
+        ndk {
+            "armeabi-v7a"
+        }
+    }
+
+    signingConfigs {
+        debug {
+            keyAlias localProperties['debugKeyAlias']
+            keyPassword localProperties['debugKeyPassword']
+            storeFile localProperties['debugStoreFile'] ? file(localProperties['debugStoreFile']) : null
+            storePassword localProperties['debugStorePassword']
+        }
+        release {
+            keyAlias localProperties['releaseKeyAlias']
+            keyPassword localProperties['releaseKeyPassword']
+            storeFile localProperties['releaseStoreFile'] ? file(localProperties['releaseStoreFile']) : null
+            storePassword localProperties['releaseStorePassword']
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+        release {
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.amap.api:location:latest.integration'
+}
