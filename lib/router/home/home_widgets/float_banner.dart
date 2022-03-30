@@ -22,9 +22,9 @@ class FloatBanner extends StatelessWidget {
       decoration: BoxDecoration(
           color: isDark(context) ? Colors.black38 : Colors.white38,
           borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(30.px),
-            topRight: Radius.circular(30.px),
-            bottomRight: Radius.circular(30.px),
+            topLeft: Radius.circular(padding30),
+            topRight: Radius.circular(padding30),
+            bottomRight: Radius.circular(padding30),
           )),
       child: Padding(
         padding: const EdgeInsets.all(8),

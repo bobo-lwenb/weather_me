@@ -218,7 +218,7 @@ class DailyItem extends StatelessWidget {
       child: Text(
         aqi2Text(context, daily.aqi),
         textAlign: TextAlign.center,
-        style: const TextStyle(color: Colors.black54),
+        style: TextStyle(color: aqi2Color(daily.aqi).computeLuminance() > .5 ? blackText : whiteText),
       ),
     );
     Row row = Row(children: [

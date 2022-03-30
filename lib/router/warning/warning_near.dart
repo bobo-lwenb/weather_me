@@ -159,7 +159,7 @@ class NearItem extends ConsumerWidget {
         warning.level,
         textAlign: TextAlign.center,
         style: Theme.of(context).textTheme.bodyText2!.copyWith(
-              color: Theme.of(context).textTheme.bodyText2!.color!.withOpacity(0.9),
+              color: warningLevel2Color(warning.level).computeLuminance() > .5 ? blackText : whiteText,
             ),
       ),
     );

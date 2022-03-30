@@ -244,7 +244,12 @@ class ContentItem extends StatelessWidget {
         color: livingLevel2Color(index.type, index.level),
         borderRadius: BorderRadius.all(Radius.circular(padding12)),
       ),
-      child: Text(index.category, style: const TextStyle(color: whiteSmoke)),
+      child: Text(
+        index.category,
+        style: TextStyle(
+          color: livingLevel2Color(index.type, index.level).computeLuminance() > .5 ? blackText : whiteText,
+        ),
+      ),
     );
     Widget text = Text(index.text, style: _subStyle(context));
     Column column2 = Column(
