@@ -12,10 +12,10 @@ class SearchShell extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _SearchShellState createState() => _SearchShellState();
+  SearchShellState createState() => SearchShellState();
 }
 
-class _SearchShellState extends State<SearchShell> with SingleTickerProviderStateMixin {
+class SearchShellState extends State<SearchShell> with SingleTickerProviderStateMixin {
   /// 动画控制器
   late final AnimationController _controller = AnimationController(
     duration: const Duration(milliseconds: 180),

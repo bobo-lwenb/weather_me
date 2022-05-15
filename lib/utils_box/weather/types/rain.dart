@@ -19,10 +19,10 @@ class Rain extends ConsumerStatefulWidget {
   }) : super(key: key);
 
   @override
-  _RainState createState() => _RainState();
+  RainState createState() => RainState();
 }
 
-class _RainState extends ConsumerState<Rain> with SingleTickerProviderStateMixin, WeatherController {
+class RainState extends ConsumerState<Rain> with SingleTickerProviderStateMixin, WeatherController {
   late final AnimationController _controller = AnimationController(
     duration: const Duration(seconds: 1),
     vsync: this,

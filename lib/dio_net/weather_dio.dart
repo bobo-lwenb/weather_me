@@ -17,7 +17,7 @@ import 'package:weather_me/router/home/cards/sun_moon/model/sun_active.dart';
 import 'package:weather_me/router/warning/model/warning.dart';
 import 'package:weather_me/utils_box/utils_time.dart';
 
-late var _baseUrl = kDebugMode
+var _baseUrl = kDebugMode
     ? 'https://devapi.qweather.com/v7' // 开发版
     : 'https://api.qweather.com/v7'; // 商业版
 

@@ -107,14 +107,14 @@ class RefreshPainter extends CustomPainter {
     // 每一格的高度
     double cellHeightSize = size.height / 3;
     // 需要缩放的色块
-    int _scaleIndex = (process % 3) ~/ 1;
+    int scaleIndex = (process % 3) ~/ 1;
 
     Path path = Path();
     double left = 0;
     for (int i = 0; i < 3; i++) {
       canvas.save();
       // 对需要缩放的色块进行缩放
-      if (i == _scaleIndex && isRefresh) {
+      if (i == scaleIndex && isRefresh) {
         canvas.translate(
           left + cellWidthSize * 2 / 2,
           (cellHeightSize * 3) / 2,

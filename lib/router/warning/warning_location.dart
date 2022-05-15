@@ -18,10 +18,10 @@ class WarningLocation extends ConsumerStatefulWidget {
   }) : super(key: key);
 
   @override
-  _WarningLocationState createState() => _WarningLocationState();
+  WarningLocationState createState() => WarningLocationState();
 }
 
-class _WarningLocationState extends ConsumerState<WarningLocation> {
+class WarningLocationState extends ConsumerState<WarningLocation> {
   @override
   Widget build(BuildContext context) {
     if (widget.warnings.isEmpty) {

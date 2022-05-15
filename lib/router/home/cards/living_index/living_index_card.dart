@@ -15,10 +15,10 @@ class LivingIndexCard extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _LivingIndexCardState createState() => _LivingIndexCardState();
+  LivingIndexCardState createState() => LivingIndexCardState();
 }
 
-class _LivingIndexCardState extends State<LivingIndexCard> {
+class LivingIndexCardState extends State<LivingIndexCard> {
   /// 需要显示的生活指数项目
   late final List<String> typeSelect = ['1', '2', '3', '5', '6', '8', '15', '16'];
 

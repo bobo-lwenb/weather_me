@@ -35,9 +35,9 @@ class DailyDrawingWrapper extends StatelessWidget {
       items.add(widget);
     }
     DailyDrawing dailyDrawing = DailyDrawing(
-      children: items,
       list: list,
       callback: callback,
+      children: items,
     );
     Widget scrollView = SingleChildScrollView(
       physics: const BouncingScrollPhysics(),
@@ -73,10 +73,10 @@ class DrawingItem extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _DrawingItemState createState() => _DrawingItemState();
+  DrawingItemState createState() => DrawingItemState();
 }
 
-class _DrawingItemState extends State<DrawingItem> {
+class DrawingItemState extends State<DrawingItem> {
   @override
   Widget build(BuildContext context) {
     Widget week = Text(weekTime(context, widget.daily.fxDate));

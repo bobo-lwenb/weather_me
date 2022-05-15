@@ -14,10 +14,10 @@ class DailyChartPage extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _DailyChartPageState createState() => _DailyChartPageState();
+  DailyChartPageState createState() => DailyChartPageState();
 }
 
-class _DailyChartPageState extends State<DailyChartPage> {
+class DailyChartPageState extends State<DailyChartPage> {
   late final ValueNotifier<int> _notifier = ValueNotifier(0);
   late final MinAndMax _minMax = minAndMaxDaily(widget.list);
 

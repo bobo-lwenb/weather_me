@@ -18,10 +18,10 @@ class SandStorm extends ConsumerStatefulWidget {
   }) : super(key: key);
 
   @override
-  _SandStormState createState() => _SandStormState();
+  SandStormState createState() => SandStormState();
 }
 
-class _SandStormState extends ConsumerState<SandStorm> with SingleTickerProviderStateMixin, WeatherController {
+class SandStormState extends ConsumerState<SandStorm> with SingleTickerProviderStateMixin, WeatherController {
   late final AnimationController _controller = AnimationController(
     duration: const Duration(seconds: 1),
     vsync: this,

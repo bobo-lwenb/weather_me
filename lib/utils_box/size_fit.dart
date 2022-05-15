@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-late var _sizeFit = SizeFit();
+var _sizeFit = SizeFit();
 
 /// 尺寸适配
 class SizeFit {
@@ -36,14 +36,14 @@ final Rect clipRect = Rect.fromLTWH(
   window.physicalSize.height,
 );
 
-late double logicWidth = window.physicalSize.width / window.devicePixelRatio;
-late double logicHeight = window.physicalSize.height / window.devicePixelRatio;
+double logicWidth = window.physicalSize.width / window.devicePixelRatio;
+double logicHeight = window.physicalSize.height / window.devicePixelRatio;
 
-late double padding6 = 6.px;
-late double padding12 = 12.px;
-late double padding18 = 18.px;
-late double padding24 = 24.px;
-late double padding30 = 30.px;
-late double padding36 = 36.px;
-late double padding42 = 42.px;
-late double padding48 = 48.px;
+double padding6 = 6.px;
+double padding12 = 12.px;
+double padding18 = 18.px;
+double padding24 = 24.px;
+double padding30 = 30.px;
+double padding36 = 36.px;
+double padding42 = 42.px;
+double padding48 = 48.px;

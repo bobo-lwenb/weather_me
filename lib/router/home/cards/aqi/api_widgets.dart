@@ -102,7 +102,7 @@ class Pollutant extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    WidgetsBinding.instance?.addPostFrameCallback((timeStamp) {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       _notifier.value = _globalKey.currentContext!.size!.width;
     });
     // 污染物数值

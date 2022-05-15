@@ -11,10 +11,10 @@ class AreaList extends ConsumerStatefulWidget {
   const AreaList({Key? key}) : super(key: key);
 
   @override
-  _CityListState createState() => _CityListState();
+  CityListState createState() => CityListState();
 }
 
-class _CityListState extends ConsumerState<AreaList> {
+class CityListState extends ConsumerState<AreaList> {
   @override
   Widget build(BuildContext context) {
     AsyncValue<AllArea> asyncValue = ref.watch(allAreaProvider);

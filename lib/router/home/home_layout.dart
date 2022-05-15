@@ -31,10 +31,10 @@ class HomeLayout extends ConsumerStatefulWidget {
         super(key: key);
 
   @override
-  _HomeLayoutState createState() => _HomeLayoutState();
+  HomeLayoutState createState() => HomeLayoutState();
 }
 
-class _HomeLayoutState extends ConsumerState<HomeLayout> with WeatherController {
+class HomeLayoutState extends ConsumerState<HomeLayout> with WeatherController {
   /// 控制背景透明度
   late final ValueNotifier<double> _opacityNotifier = ValueNotifier(0);
 
@@ -111,7 +111,7 @@ class _HomeLayoutState extends ConsumerState<HomeLayout> with WeatherController 
   @override
   Widget build(BuildContext context) {
     // 在页面渲染完成后，用于确定第一个banner的高度
-    WidgetsBinding.instance?.addPostFrameCallback((timeStamp) {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       List<double> list = List.empty(growable: true);
       for (var globalKey in _globalKeys) {
         if (globalKey.currentContext == null) continue;

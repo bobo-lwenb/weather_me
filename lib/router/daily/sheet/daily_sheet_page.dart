@@ -21,10 +21,10 @@ class DailySheetPage extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _DailySheetPageState createState() => _DailySheetPageState();
+  DailySheetPageState createState() => DailySheetPageState();
 }
 
-class _DailySheetPageState extends State<DailySheetPage> {
+class DailySheetPageState extends State<DailySheetPage> {
   late final MinAndMax _minMax = minAndMaxDaily(widget.list);
 
   @override

@@ -29,9 +29,9 @@ class _AppearanceState extends State<Appearance> {
       return ItemCard(
         isCheck: ref.watch(themeProvider) == ThemeMode.light,
         title: l10n(context).lightMode,
-        child: lightContent,
         onTap: () => ref.read(themeProvider.notifier).toggle(ThemeMode.light),
         backgroundColor: Colors.white,
+        child: lightContent,
       );
     });
 
@@ -48,9 +48,9 @@ class _AppearanceState extends State<Appearance> {
       return ItemCard(
         isCheck: ref.watch(themeProvider) == ThemeMode.dark,
         title: l10n(context).dark,
-        child: darkContent,
         onTap: () => ref.read(themeProvider.notifier).toggle(ThemeMode.dark),
         backgroundColor: black28,
+        child: darkContent,
       );
     });
 

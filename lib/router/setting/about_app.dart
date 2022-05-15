@@ -12,16 +12,16 @@ class AboutApp extends ConsumerStatefulWidget {
   const AboutApp({Key? key}) : super(key: key);
 
   @override
-  _AboutAppState createState() => _AboutAppState();
+  AboutAppState createState() => AboutAppState();
 }
 
-class _AboutAppState extends ConsumerState<AboutApp> {
+class AboutAppState extends ConsumerState<AboutApp> {
   final ValueNotifier<List<String>> _notifier = ValueNotifier(['', '']);
 
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance?.addPostFrameCallback((timeStamp) async {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) async {
       PackageInfo info = await PackageInfo.fromPlatform();
       _notifier.value = [info.appName, info.version];
     });

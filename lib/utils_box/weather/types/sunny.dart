@@ -13,10 +13,10 @@ class Sunny extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _SunnyState createState() => _SunnyState();
+  SunnyState createState() => SunnyState();
 }
 
-class _SunnyState extends State<Sunny> with SingleTickerProviderStateMixin, WeatherController {
+class SunnyState extends State<Sunny> with SingleTickerProviderStateMixin, WeatherController {
   @override
   Widget build(BuildContext context) {
     return Container(

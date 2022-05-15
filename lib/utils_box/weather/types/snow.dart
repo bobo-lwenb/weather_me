@@ -17,10 +17,10 @@ class Snow extends ConsumerStatefulWidget {
   }) : super(key: key);
 
   @override
-  _SnowState createState() => _SnowState();
+  SnowState createState() => SnowState();
 }
 
-class _SnowState extends ConsumerState<Snow> with SingleTickerProviderStateMixin, WeatherController {
+class SnowState extends ConsumerState<Snow> with SingleTickerProviderStateMixin, WeatherController {
   late final AnimationController _controller = AnimationController(
     duration: const Duration(seconds: 1),
     vsync: this,

@@ -3,7 +3,7 @@ import 'package:flutter/foundation.dart';
 import 'package:weather_me/dio_net/hefeng_key.dart';
 
 // 以下两个可以需要自行申请
-late var _key = kDebugMode
+var _key = kDebugMode
     ? devKey // 开发版
     : apiKey; // 商业版
 
@@ -11,7 +11,7 @@ class BaseDio {
   late Dio _dio;
 
   BaseDio({required String baseUrl}) {
-    var _baseOptions = BaseOptions(
+    var baseOptions = BaseOptions(
       baseUrl: baseUrl,
       connectTimeout: 10000,
       receiveTimeout: 10000,
@@ -20,7 +20,7 @@ class BaseDio {
         'gzip': 'y',
       },
     );
-    _dio = Dio(_baseOptions)
+    _dio = Dio(baseOptions)
       ..interceptors.add(ErrorInterceptor())
       ..interceptors.add(LogInterceptor(
         requestBody: true,

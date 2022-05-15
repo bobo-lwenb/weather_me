@@ -21,10 +21,10 @@ class DailyCard extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _DailyCardState createState() => _DailyCardState();
+  DailyCardState createState() => DailyCardState();
 }
 
-class _DailyCardState extends State<DailyCard> with SingleTickerProviderStateMixin {
+class DailyCardState extends State<DailyCard> with SingleTickerProviderStateMixin {
   final double _shrinkHeight = (padding6 + 134.px) * 3 + padding6 * 3;
   final double _expandHeight = (padding6 + 134.px) * 7 + padding6 * 7;
 

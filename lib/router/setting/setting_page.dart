@@ -10,10 +10,10 @@ class SettingPage extends ConsumerStatefulWidget {
   const SettingPage({Key? key}) : super(key: key);
 
   @override
-  _SettingState createState() => _SettingState();
+  SettingState createState() => SettingState();
 }
 
-class _SettingState extends ConsumerState<SettingPage> {
+class SettingState extends ConsumerState<SettingPage> {
   @override
   Widget build(BuildContext context) {
     Column column = Column(

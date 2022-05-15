@@ -12,10 +12,10 @@ class WeatherContainer extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _BackgroundContainerState createState() => _BackgroundContainerState();
+  BackgroundContainerState createState() => BackgroundContainerState();
 }
 
-class _BackgroundContainerState extends State<WeatherContainer> {
+class BackgroundContainerState extends State<WeatherContainer> {
   @override
   Widget build(BuildContext context) {
     return WeatherAnimation(icon: widget.icon);
@@ -25,7 +25,7 @@ class _BackgroundContainerState extends State<WeatherContainer> {
 /// 用于控制天气背景的播放和暂停
 mixin WeatherController {
   void togglePlay(WidgetRef ref, bool isStop) {
-    WidgetsBinding.instance?.addPostFrameCallback((timeStamp) {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       ref.read(isPlayProvider.notifier).toggle(isStop);
     });
   }

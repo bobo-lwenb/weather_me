@@ -31,6 +31,6 @@ class FloatBanner extends StatelessWidget {
         child: row,
       ),
     );
-    return GestureDetector(child: container, onTap: callback);
+    return GestureDetector(onTap: callback, child: container);
   }
 }

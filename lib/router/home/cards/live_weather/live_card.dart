@@ -14,10 +14,10 @@ class LiveCard extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _LiveCardState createState() => _LiveCardState();
+  LiveCardState createState() => LiveCardState();
 }
 
-class _LiveCardState extends State<LiveCard> {
+class LiveCardState extends State<LiveCard> {
   late final TextStyle _tempStyle = const TextStyle(fontSize: 26);
   late final TextStyle _textStyle = const TextStyle(fontSize: 18);
 

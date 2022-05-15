@@ -34,16 +34,16 @@ class HomeContainer extends ConsumerStatefulWidget {
   const HomeContainer({Key? key}) : super(key: key);
 
   @override
-  _HomeContainerState createState() => _HomeContainerState();
+  HomeContainerState createState() => HomeContainerState();
 }
 
-class _HomeContainerState extends ConsumerState<HomeContainer> {
+class HomeContainerState extends ConsumerState<HomeContainer> {
   late final AmapLocation amapLocation = AmapLocation();
 
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance?.addPostFrameCallback((timeStamp) async {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) async {
       List list = await Future.wait([
         prefsSetting.getLocaleType(),
         prefsSetting.getAppearanceType(),
@@ -76,7 +76,7 @@ class _HomeContainerState extends ConsumerState<HomeContainer> {
     AsyncValue<WeatherModel> asyncValue = ref.watch(weatherProvider);
     WeatherModel model = asyncValue.when(
       data: (model) {
-        WidgetsBinding.instance?.addPostFrameCallback((timeStamp) {
+        WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
           Future.delayed(
             const Duration(seconds: 2),
             () => ref.read(isRefreshProvider.notifier).state = false,

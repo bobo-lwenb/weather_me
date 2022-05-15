@@ -102,6 +102,13 @@ class _SearchLayerState extends ConsumerState<SearchLayer> {
           itemBuilder: (context, index) {
             LookupArea city = list[index];
             return GestureDetector(
+              behavior: HitTestBehavior.opaque,
+              onTap: () {
+                ref.watch(addRecentlyProvider(city.id));
+                ref.read(searchStringProvider.notifier).state = '';
+                ref.read(adCodeProvider.notifier).state = city.id;
+                AppRouterDelegate.of(context).popRoute();
+              },
               child: Padding(
                 padding: EdgeInsets.all(padding12),
                 child: Text(
@@ -111,13 +118,6 @@ class _SearchLayerState extends ConsumerState<SearchLayer> {
                   style: const TextStyle(fontSize: 14),
                 ),
               ),
-              behavior: HitTestBehavior.opaque,
-              onTap: () {
-                ref.watch(addRecentlyProvider(city.id));
-                ref.read(searchStringProvider.notifier).state = '';
-                ref.read(adCodeProvider.notifier).state = city.id;
-                AppRouterDelegate.of(context).popRoute();
-              },
             );
           },
           separatorBuilder: (BuildContext context, int index) {
@@ -172,6 +172,18 @@ class _SearchLayerState extends ConsumerState<SearchLayer> {
     Widget cancelBuilder = AnimatedBuilder(
       animation: widget.controller,
       child: GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: () {
+          if (_notifierCancle.value) {
+            _editController.clear();
+            _focusNode.unfocus();
+            widget.controller.reverse();
+            ref.read(searchStringProvider.notifier).state = '';
+          } else {
+            _focusNode.unfocus();
+            _doSearch(_editController.text);
+          }
+        },
         child: Container(
           alignment: Alignment.center,
           child: ValueListenableBuilder<bool>(
@@ -186,18 +198,6 @@ class _SearchLayerState extends ConsumerState<SearchLayer> {
             },
           ),
         ),
-        behavior: HitTestBehavior.opaque,
-        onTap: () {
-          if (_notifierCancle.value) {
-            _editController.clear();
-            _focusNode.unfocus();
-            widget.controller.reverse();
-            ref.read(searchStringProvider.notifier).state = '';
-          } else {
-            _focusNode.unfocus();
-            _doSearch(_editController.text);
-          }
-        },
       ),
       builder: (context, child) {
         return Positioned(
@@ -231,6 +231,10 @@ class _SearchLayerState extends ConsumerState<SearchLayer> {
         contentPadding: EdgeInsets.symmetric(horizontal: padding12),
         prefixIcon: const Icon(Icons.search_rounded, color: tomato),
         suffixIcon: ValueListenableBuilder<bool>(
+          valueListenable: _notifierCancle,
+          builder: (content, value, child) {
+            return value ? const SizedBox() : child!;
+          },
           child: GestureDetector(
             child: const Icon(Icons.close_rounded, color: tomato),
             onTap: () {
@@ -239,10 +243,6 @@ class _SearchLayerState extends ConsumerState<SearchLayer> {
               ref.read(searchStringProvider.notifier).state = '';
             },
           ),
-          valueListenable: _notifierCancle,
-          builder: (content, value, child) {
-            return value ? const SizedBox() : child!;
-          },
         ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.all(Radius.circular(padding24)),

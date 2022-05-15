@@ -18,10 +18,10 @@ class Foggy extends ConsumerStatefulWidget {
   }) : super(key: key);
 
   @override
-  _FoggyState createState() => _FoggyState();
+  FoggyState createState() => FoggyState();
 }
 
-class _FoggyState extends ConsumerState<Foggy> with SingleTickerProviderStateMixin, WeatherController {
+class FoggyState extends ConsumerState<Foggy> with SingleTickerProviderStateMixin, WeatherController {
   late final AnimationController _controller = AnimationController(
     duration: const Duration(seconds: 1),
     vsync: this,
@@ -82,16 +82,16 @@ class _FoggyState extends ConsumerState<Foggy> with SingleTickerProviderStateMix
 
   Widget _buildFog(FogConfig config, Image image) {
     AnimatedBuilder builder = AnimatedBuilder(
-      child: Opacity(
-        opacity: _foggyAlpha(widget.type),
-        child: image,
-      ),
       animation: _controller,
       builder: (context, child) {
         config.move();
         Widget widget = Positioned(top: config.top, left: config.left, child: child!);
         return widget;
       },
+      child: Opacity(
+        opacity: _foggyAlpha(widget.type),
+        child: image,
+      ),
     );
     return builder;
   }

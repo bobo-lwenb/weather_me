@@ -191,7 +191,7 @@ class ContentItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    WidgetsBinding.instance?.addPostFrameCallback((timeStamp) {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       double bottomLineHeight =
           _globalKey.currentContext!.size!.height - padding36 - padding6 - 42.px - 30.px - padding24 * 2;
       _notifier.value = bottomLineHeight;
@@ -269,8 +269,8 @@ class ContentItem extends StatelessWidget {
     Row row = Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Expanded(child: column1, flex: 1),
-        Expanded(child: container, flex: 2),
+        Expanded(flex: 1, child: column1),
+        Expanded(flex: 2, child: container),
       ],
     );
     return Padding(

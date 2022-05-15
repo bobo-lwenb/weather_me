@@ -18,10 +18,10 @@ class StarrySky extends ConsumerStatefulWidget {
   }) : super(key: key);
 
   @override
-  _StarrySkyState createState() => _StarrySkyState();
+  StarrySkyState createState() => StarrySkyState();
 }
 
-class _StarrySkyState extends ConsumerState<StarrySky> with SingleTickerProviderStateMixin, WeatherController {
+class StarrySkyState extends ConsumerState<StarrySky> with SingleTickerProviderStateMixin, WeatherController {
   late final AnimationController _controller = AnimationController(
     duration: const Duration(seconds: 1),
     vsync: this,

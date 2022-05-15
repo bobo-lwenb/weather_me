@@ -18,10 +18,10 @@ class Cloudy extends ConsumerStatefulWidget {
   }) : super(key: key);
 
   @override
-  _PartlyCloudyState createState() => _PartlyCloudyState();
+  PartlyCloudyState createState() => PartlyCloudyState();
 }
 
-class _PartlyCloudyState extends ConsumerState<Cloudy> with SingleTickerProviderStateMixin, WeatherController {
+class PartlyCloudyState extends ConsumerState<Cloudy> with SingleTickerProviderStateMixin, WeatherController {
   late final AnimationController _controller = AnimationController(
     duration: const Duration(seconds: 1),
     vsync: this,
@@ -70,10 +70,6 @@ class _PartlyCloudyState extends ConsumerState<Cloudy> with SingleTickerProvider
 
   Widget _buildCloud(CloudConfig config, Image image) {
     AnimatedBuilder builder = AnimatedBuilder(
-      child: Opacity(
-        opacity: widget.isDay ? .8 : .5,
-        child: image,
-      ),
       animation: _controller,
       builder: (context, child) {
         config.move();
@@ -84,6 +80,10 @@ class _PartlyCloudyState extends ConsumerState<Cloudy> with SingleTickerProvider
         );
         return positioned;
       },
+      child: Opacity(
+        opacity: widget.isDay ? .8 : .5,
+        child: image,
+      ),
     );
     return builder;
   }

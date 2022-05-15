@@ -24,10 +24,10 @@ class SwipeContainer extends ConsumerStatefulWidget {
   }) : super(key: key);
 
   @override
-  _SwipeContainerState createState() => _SwipeContainerState();
+  SwipeContainerState createState() => SwipeContainerState();
 }
 
-class _SwipeContainerState extends ConsumerState<SwipeContainer> {
+class SwipeContainerState extends ConsumerState<SwipeContainer> {
   @override
   Widget build(BuildContext context) {
     return ListView(
@@ -188,7 +188,6 @@ class _SwipeContainerState extends ConsumerState<SwipeContainer> {
         ValueNotifier<double> notifier = ValueNotifier(i * eachHeight);
         listNotifier.add(notifier);
         ValueListenableBuilder builder = ValueListenableBuilder<double>(
-          child: itemSwipe,
           valueListenable: notifier,
           builder: (context, value, child) {
             AnimatedPositioned positioned = AnimatedPositioned(
@@ -201,6 +200,7 @@ class _SwipeContainerState extends ConsumerState<SwipeContainer> {
             );
             return positioned;
           },
+          child: itemSwipe,
         );
         listSort.add(builder);
       }
@@ -249,7 +249,7 @@ class _SwipeContainerState extends ConsumerState<SwipeContainer> {
     sortIndex = temp;
   }
 
-  /// 遮罩层
+  /// 遮罩层实体
   late OverlayEntry _overlayEntry;
 
   /// 移动时的遮罩层内的组件

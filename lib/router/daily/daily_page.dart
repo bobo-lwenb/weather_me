@@ -16,10 +16,10 @@ class DailyPage extends ConsumerStatefulWidget {
   const DailyPage({Key? key}) : super(key: key);
 
   @override
-  _DailyChartState createState() => _DailyChartState();
+  DailyChartState createState() => DailyChartState();
 }
 
-class _DailyChartState extends ConsumerState<DailyPage> with SingleTickerProviderStateMixin {
+class DailyChartState extends ConsumerState<DailyPage> with SingleTickerProviderStateMixin {
   late List<String> tabs = [l10n(context).sheet, l10n(context).chart];
 
   @override

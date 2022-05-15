@@ -16,10 +16,10 @@ class SunMoonCard extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _SunMoonCardState createState() => _SunMoonCardState();
+  SunMoonCardState createState() => SunMoonCardState();
 }
 
-class _SunMoonCardState extends State<SunMoonCard> {
+class SunMoonCardState extends State<SunMoonCard> {
   @override
   Widget build(BuildContext context) {
     Widget title = _buildTitle();

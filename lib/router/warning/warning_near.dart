@@ -17,10 +17,10 @@ class WarningNear extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _EarningNearState createState() => _EarningNearState();
+  EarningNearState createState() => EarningNearState();
 }
 
-class _EarningNearState extends State<WarningNear> {
+class EarningNearState extends State<WarningNear> {
   @override
   Widget build(BuildContext context) {
     Widget title = Container(

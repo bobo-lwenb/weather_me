@@ -18,10 +18,10 @@ class ExpandContainer extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _ExpandContainerState createState() => _ExpandContainerState();
+  ExpandContainerState createState() => ExpandContainerState();
 }
 
-class _ExpandContainerState extends State<ExpandContainer> with SingleTickerProviderStateMixin {
+class ExpandContainerState extends State<ExpandContainer> with SingleTickerProviderStateMixin {
   final ValueNotifier<bool> _notifier = ValueNotifier(false);
 
   late final AnimationController _controller = AnimationController(

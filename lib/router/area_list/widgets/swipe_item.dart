@@ -60,20 +60,20 @@ class SwipeItem extends ConsumerStatefulWidget {
   }) : super(key: key);
 
   @override
-  _ItemSwipeState createState() => _ItemSwipeState();
+  ItemSwipeState createState() => ItemSwipeState();
 }
 
 /// item的高度
 final double itemSwipeHeight = 150.px;
 
-class _ItemSwipeState extends ConsumerState<SwipeItem> {
+class ItemSwipeState extends ConsumerState<SwipeItem> {
   /// 删除文本的宽度
   late double _deleteWidth;
 
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance?.addPostFrameCallback((timeStamp) {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       _deleteWidth = _globalKey.currentContext!.size!.width;
     });
   }

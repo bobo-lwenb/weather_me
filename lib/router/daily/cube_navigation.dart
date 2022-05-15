@@ -15,10 +15,10 @@ class CubeNavigation extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _CubeNavigationState createState() => _CubeNavigationState();
+  CubeNavigationState createState() => CubeNavigationState();
 }
 
-class _CubeNavigationState extends State<CubeNavigation> {
+class CubeNavigationState extends State<CubeNavigation> {
   final double _itemWidth = 180.px;
   final double _itemHeight = 60.px;
   final double _spacing = 10.px;
@@ -100,10 +100,10 @@ class NavigationPage extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _NavigationPageState createState() => _NavigationPageState();
+  NavigationPageState createState() => NavigationPageState();
 }
 
-class _NavigationPageState extends State<NavigationPage> {
+class NavigationPageState extends State<NavigationPage> {
   late final ValueNotifier<int> _notifier = ValueNotifier<int>(0);
 
   @override

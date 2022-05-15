@@ -18,10 +18,10 @@ class HourlyPage extends ConsumerStatefulWidget {
   const HourlyPage({Key? key}) : super(key: key);
 
   @override
-  _HourlyPageState createState() => _HourlyPageState();
+  HourlyPageState createState() => HourlyPageState();
 }
 
-class _HourlyPageState extends ConsumerState<HourlyPage> {
+class HourlyPageState extends ConsumerState<HourlyPage> {
   late final ValueNotifier<int> _notifier = ValueNotifier(0);
 
   /// 标题栏文字样式
@@ -69,7 +69,7 @@ class _HourlyPageState extends ConsumerState<HourlyPage> {
   }
 
   void _update(int index) {
-    WidgetsBinding.instance?.addPostFrameCallback((timeStamp) {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       _notifier.value = index;
     });
   }

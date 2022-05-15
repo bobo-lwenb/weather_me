@@ -18,10 +18,10 @@ class HourlyCard extends StatefulWidget {
   const HourlyCard({Key? key, required this.hourlys}) : super(key: key);
 
   @override
-  _HourlyCardState createState() => _HourlyCardState();
+  HourlyCardState createState() => HourlyCardState();
 }
 
-class _HourlyCardState extends State<HourlyCard> {
+class HourlyCardState extends State<HourlyCard> {
   /// 详细的文字样式
   late final TextStyle _detailsStyle = const TextStyle(color: Colors.blueAccent);
 

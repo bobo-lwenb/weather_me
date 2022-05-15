@@ -16,10 +16,10 @@ class AqiCard extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _ApiCardState createState() => _ApiCardState();
+  ApiCardState createState() => ApiCardState();
 }
 
-class _ApiCardState extends State<AqiCard> {
+class ApiCardState extends State<AqiCard> {
   /// 显示更多文字样式
   late final TextStyle _moreStyle = const TextStyle(color: Colors.blueAccent);
 
@@ -45,7 +45,7 @@ class _ApiCardState extends State<AqiCard> {
         title,
         Padding(
           padding: EdgeInsets.only(right: padding36, bottom: padding24),
-          child: Align(child: time, alignment: Alignment.centerRight),
+          child: Align(alignment: Alignment.centerRight, child: time),
         ),
         aqiItem,
       ],

@@ -22,10 +22,10 @@ class LiveExpandedCard extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  _LiveExpandCaedState createState() => _LiveExpandCaedState();
+  LiveExpandCaedState createState() => LiveExpandCaedState();
 }
 
-class _LiveExpandCaedState extends State<LiveExpandedCard> {
+class LiveExpandCaedState extends State<LiveExpandedCard> {
   @override
   Widget build(BuildContext context) {
     // 灾害预警

@@ -18,10 +18,10 @@ class Lightning extends ConsumerStatefulWidget {
   }) : super(key: key);
 
   @override
-  _LightningState createState() => _LightningState();
+  LightningState createState() => LightningState();
 }
 
-class _LightningState extends ConsumerState<Lightning> with SingleTickerProviderStateMixin, WeatherController {
+class LightningState extends ConsumerState<Lightning> with SingleTickerProviderStateMixin, WeatherController {
   late final AnimationController _controller = AnimationController(
     duration: const Duration(seconds: 1),
     vsync: this,
@@ -81,7 +81,6 @@ class _LightningState extends ConsumerState<Lightning> with SingleTickerProvider
 
   Widget _buildLightning(LightningConfig config, Image image) {
     AnimatedBuilder builder = AnimatedBuilder(
-      child: image,
       animation: _controller,
       builder: (context, child) {
         config.flashing();
@@ -94,6 +93,7 @@ class _LightningState extends ConsumerState<Lightning> with SingleTickerProvider
           ),
         );
       },
+      child: image,
     );
     return builder;
   }

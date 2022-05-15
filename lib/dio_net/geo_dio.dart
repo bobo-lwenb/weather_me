@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:weather_me/dio_net/base_dio.dart';
 import 'package:weather_me/router/area_list/model/lookup_area.dart';
 
-late var _baseUrl = 'https://geoapi.qweather.com/v2';
+var _baseUrl = 'https://geoapi.qweather.com/v2';
 
 GeoDio geoDio = GeoDio(baseUrl: _baseUrl);
 
