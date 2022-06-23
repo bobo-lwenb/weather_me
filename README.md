@@ -89,7 +89,7 @@ void push(BuildContext context, {required String name}) => AppRouterDelegate.of(
 
 
 # 应用首页
-<img src="lib/assets/demo/home_page.gif" width="40%" />
+<img src="https://github.com/bobo-lwenb/weather_me/blob/master/lib/assets/demo/home_page.gif" width="40%" />
 
 ## 布局动画
 应用首页是一个自定义实现的可伸缩吸附式滑动布局，并且具有下拉刷新的功能。布局包含动态的天气背景、Appbar、右上侧的Icon组、浮于卡片上方的banner、刷新动画以及主体的可滚动部分，布局结构是使用`Stack+Positioned`实现的，其中的进入退出动画是根据滑动部分（使用`CustomScrollVieww`实现）的滑动`offset`计算出来的偏移系数，最后通过修改`Positioned`的位置来实现的：
@@ -217,15 +217,15 @@ me天气可以根据实时的天气类型展示对应的动态天气背景，可
 
 |白天晴|夜晚晴|阴|多云|
 |:----:|:----:|:----:|:----:|
-|<img src="lib/assets/demo/weather/sunny.gif"/>|<img src="lib/assets/demo/weather/sunny_night.gif"/>|<img src="lib/assets/demo/weather/overcast.gif"/>|<img src="lib/assets/demo/weather/cloudy.gif"/>|
+|<img src="https://github.com/bobo-lwenb/weather_me/blob/master/lib/assets/demo/weather/sunny.gif"/>|<img src="https://github.com/bobo-lwenb/weather_me/blob/master/lib/assets/demo/weather/sunny_night.gif"/>|<img src="https://github.com/bobo-lwenb/weather_me/blob/master/lib/assets/demo/weather/overcast.gif"/>|<img src="https://github.com/bobo-lwenb/weather_me/blob/master/lib/assets/demo/weather/cloudy.gif"/>|
 
 |强雷阵雨|雨|雪|雾|
 |:----:|:----:|:----:|:----:|
-|<img src="lib/assets/demo/weather/lightning.gif"/>|<img src="lib/assets/demo/weather/rain.gif"/>|<img src="lib/assets/demo/weather/snow.gif"/>|<img src="lib/assets/demo/weather/foggy.gif"/>|
+|<img src="https://github.com/bobo-lwenb/weather_me/blob/master/lib/assets/demo/weather/lightning.gif"/>|<img src="https://github.com/bobo-lwenb/weather_me/blob/master/lib/assets/demo/weather/rain.gif"/>|<img src="https://github.com/bobo-lwenb/weather_me/blob/master/lib/assets/demo/weather/snow.gif"/>|<img src="https://github.com/bobo-lwenb/weather_me/blob/master/lib/assets/demo/weather/foggy.gif"/>|
 
 |霾|浮/沙尘|
 |:----:|:----:|
-|<img src="lib/assets/demo/weather/haze.gif" width="50%"/>|<img src="lib/assets/demo/weather/sand.gif" width="50%"/>|
+|<img src="https://github.com/bobo-lwenb/weather_me/blob/master/lib/assets/demo/weather/haze.gif" width="50%"/>|<img src="https://github.com/bobo-lwenb/weather_me/blob/master/lib/assets/demo/weather/sand.gif" width="50%"/>|
 
 ## 构成
 动态天气背景也是首页布局的组成部分，动态天气背景又可以分为：
@@ -350,8 +350,8 @@ class IsPalyNotifier extends StateNotifier<bool> {
 而动态天气的动画效果是靠`AnimationController`进行驱动的，所以一旦首页不可见，系统自会停止发布页面刷新的`vsync`信号，动画自然会停止。
 
 # 地区的搜索和列表管理
-<img src="lib/assets/demo/area/area_list_1.png" width="25%"/> <img src="lib/assets/demo/area/area_list_2.png" width="25%"/> <img src="lib/assets/demo/area/area_list_3.png" width="25%"/>
-<img src="lib/assets/demo/area/area_list_4.png" width="25%"/> <img src="lib/assets/demo/area/area_list_5.png" width="25%"/>
+<img src="https://github.com/bobo-lwenb/weather_me/blob/master/lib/assets/demo/area/area_list_1.png" width="25%"/> <img src="https://github.com/bobo-lwenb/weather_me/blob/master/lib/assets/demo/area/area_list_2.png" width="25%"/> <img src="https://github.com/bobo-lwenb/weather_me/blob/master/lib/assets/demo/area/area_list_3.png" width="25%"/>
+<img src="https://github.com/bobo-lwenb/weather_me/blob/master/lib/assets/demo/area/area_list_4.png" width="25%"/> <img src="https://github.com/bobo-lwenb/weather_me/blob/master/lib/assets/demo/area/area_list_5.png" width="25%"/>
 
 ## 界面结构
 地区列表分为两层，一层是下方的列表部分，一层是上方的搜索框。同样也是使用使用`Stack+Positioned`实现的，方法与之前的一致，这里不多赘述。
@@ -394,7 +394,7 @@ void paint(PaintingContext context, Offset offset) {
 `computeDryLayout`用于确认自身的约束尺寸，这里直接简单的填充满父级传递的约束即可；`sizedByParent`表示自身的尺寸是否只受父级约束的影响，这里因为没有`child`，所以直接返回true，同时也表明自己是一个`relayoutBoundary`；`hitTestSelf`表示自己命中测试是否通过，因为需要滑动有没有`child`，直接返回true；`paint`就是绘制自身的地方，也就是`Canvas`、`Paint`那一套用法。
 
 # 30天预报
-<img src="lib/assets/demo/30day.gif" width="40%"/>
+<img src="https://github.com/bobo-lwenb/weather_me/blob/master/lib/assets/demo/30day.gif" width="40%"/>
 
 ## 界面结构
 因为有两种展示数据的方式，所以采用了`IndexedStack`。
@@ -472,6 +472,6 @@ bool hitTestChildren(BoxHitTestResult result, {required Offset position}) {
 # 其它一些自定义Widget
 |实时天气预报|太阳和月亮的升降|
 |:----:|:----:|
-|<img src="lib/assets/demo/living_card.png" width="60%"/>|<img src="lib/assets/demo/sunmoon_card.png" width="60%"/>|
+|<img src="https://github.com/bobo-lwenb/weather_me/blob/master/lib/assets/demo/living_card.png" width="60%"/>|<img src="https://github.com/bobo-lwenb/weather_me/blob/master/lib/assets/demo/sunmoon_card.png" width="60%"/>|
 
 实时天气预报的卡片中的降水量走势和风向的自定义Widget，和表示太阳和月亮的升降的自定义Widget，都是采用`CustomPainter`实现的，只需要进行一些简单的计算即可。
