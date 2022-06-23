@@ -31,6 +31,7 @@ class SunMoonCardState extends State<SunMoonCard> {
           sun: widget.sunActive,
           moon: widget.moonActive,
         ),
+        isComplex: true,
       ),
     );
     return Column(

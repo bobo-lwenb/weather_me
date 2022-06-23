@@ -57,6 +57,7 @@ class SnowState extends ConsumerState<Snow> with SingleTickerProviderStateMixin,
             type: widget.type,
             snowflake: _snowflakes,
           ),
+          isComplex: true,
         );
       },
     );

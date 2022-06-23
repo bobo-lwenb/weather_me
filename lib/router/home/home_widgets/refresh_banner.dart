@@ -52,6 +52,7 @@ class _RefreshBannerState extends ConsumerState<RefreshBanner> with SingleTicker
             process: _controller.value,
             isRefresh: ref.read(isRefreshProvider.notifier).state,
           ),
+          isComplex: true,
         );
       },
     );

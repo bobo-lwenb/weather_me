@@ -59,6 +59,7 @@ class RainState extends ConsumerState<Rain> with SingleTickerProviderStateMixin,
             type: widget.type,
             raindRops: _raindRops,
           ),
+          isComplex: true,
         );
       },
     );

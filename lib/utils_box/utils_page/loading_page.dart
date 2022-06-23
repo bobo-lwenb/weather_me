@@ -40,6 +40,7 @@ class _LoadingPageState extends State<LoadingPage> with SingleTickerProviderStat
             process: _controller.value,
             isRefresh: true,
           ),
+          isComplex: true,
         );
       },
     );

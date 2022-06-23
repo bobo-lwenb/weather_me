@@ -26,6 +26,7 @@ class _MinutelyState extends ConsumerState<MinutelyCard> {
         context: context,
         minutes: widget.minutes,
       ),
+      isComplex: true,
     );
   }
 }

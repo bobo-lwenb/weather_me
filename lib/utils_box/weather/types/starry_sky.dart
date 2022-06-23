@@ -64,6 +64,7 @@ class StarrySkyState extends ConsumerState<StarrySky> with SingleTickerProviderS
             stars: _stars,
             meteors: _meteors,
           ),
+          isComplex: true,
         );
       },
     );

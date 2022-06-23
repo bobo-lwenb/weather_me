@@ -7,6 +7,7 @@ bool isDark(BuildContext context) => Theme.of(context).brightness == Brightness.
 
 /// 浅色主题
 ThemeData lightThemeData(BuildContext context) => ThemeData.light().copyWith(
+      useMaterial3: true,
       colorScheme: const ColorScheme.light(
         primary: whiteSmoke,
       ),
@@ -25,6 +26,7 @@ ThemeData lightThemeData(BuildContext context) => ThemeData.light().copyWith(
 
 /// 深色主题
 ThemeData darkThemeData(BuildContext context) => ThemeData.dark().copyWith(
+      useMaterial3: true,
       colorScheme: const ColorScheme.dark(
         primary: black18,
       ),
