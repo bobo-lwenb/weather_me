@@ -360,7 +360,7 @@ class IsPalyNotifier extends StateNotifier<bool> {
 
 长按排序中需要注意的是，在item的位置发生变化时要及时的对数据源进行刷行，这样才算真正的完成一次排序过程。
 # 72小时预报
-<img src="https://github.com/bobo-lwenb/weather_me/lib/assets/demo/72hour.gif" width="40%"/>
+<img src="https://github.com/bobo-lwenb/weather_me/blob/master/lib/assets/demo/72hour.gif" width="40%"/>
 
 ## 实现
 上方的可滑动图标，是使用`RenderBox`实现的，虽然直接使用`CustomPainter`更简单，不过作为一个练手的的项目，更好的选择是多做一些新的尝试。
